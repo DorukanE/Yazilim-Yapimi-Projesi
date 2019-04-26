@@ -1,0 +1,10 @@
+C:\Users\doruk\Desktop\Yazılım Yapımı Projesi\Yazılım Yapımı Projesi\bin\Debug\Yazılım Yapımı Projesi.exe
+C:\Users\doruk\Desktop\Yazılım Yapımı Projesi\Yazılım Yapımı Projesi\bin\Debug\Yazılım Yapımı Projesi.pdb
+C:\Users\doruk\Desktop\Yazılım Yapımı Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım Yapımı Projesi.csprojAssemblyReference.cache
+C:\Users\doruk\Desktop\Yazılım Yapımı Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım_Yapımı_Projesi.Form1.resources
+C:\Users\doruk\Desktop\Yazılım Yapımı Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım_Yapımı_Projesi.Properties.Resources.resources
+C:\Users\doruk\Desktop\Yazılım Yapımı Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım Yapımı Projesi.csproj.GenerateResource.cache
+C:\Users\doruk\Desktop\Yazılım Yapımı Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım Yapımı Projesi.exe.licenses
+C:\Users\doruk\Desktop\Yazılım Yapımı Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım Yapımı Projesi.csproj.CoreCompileInputs.cache
+C:\Users\doruk\Desktop\Yazılım Yapımı Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım Yapımı Projesi.exe
+C:\Users\doruk\Desktop\Yazılım Yapımı Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım Yapımı Projesi.pdb
