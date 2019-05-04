@@ -15,15 +15,11 @@ namespace Yazılım_Yapımı_Projesi
         {
             InitializeComponent();
         }
-
-        private void ribbonControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }
