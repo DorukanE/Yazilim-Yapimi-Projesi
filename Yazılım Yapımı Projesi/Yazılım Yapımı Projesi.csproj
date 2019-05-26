@@ -86,13 +86,34 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kelime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlBaglanti.cs" />
+    <Compile Include="VeritabaniIslemleri.cs" />
     <Compile Include="İngilizceTurkceSozlukDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>İngilizceTurkceSozlukDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="İngilizceTurkceSozlukDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>İngilizceTurkceSozlukDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="İngilizceTurkceSozlukDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>İngilizceTurkceSozlukDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="İngilizceTurkceSozlukDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>İngilizceTurkceSozlukDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="İngilizceTurkceSozlukDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>İngilizceTurkceSozlukDataSet4.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -127,6 +148,50 @@
     </None>
     <None Include="İngilizceTurkceSozlukDataSet.xss">
       <DependentUpon>İngilizceTurkceSozlukDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet1.xsc">
+      <DependentUpon>İngilizceTurkceSozlukDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>İngilizceTurkceSozlukDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet1.xss">
+      <DependentUpon>İngilizceTurkceSozlukDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet2.xsc">
+      <DependentUpon>İngilizceTurkceSozlukDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>İngilizceTurkceSozlukDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet2.xss">
+      <DependentUpon>İngilizceTurkceSozlukDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet3.xsc">
+      <DependentUpon>İngilizceTurkceSozlukDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>İngilizceTurkceSozlukDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet3.xss">
+      <DependentUpon>İngilizceTurkceSozlukDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet4.xsc">
+      <DependentUpon>İngilizceTurkceSozlukDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>İngilizceTurkceSozlukDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="İngilizceTurkceSozlukDataSet4.xss">
+      <DependentUpon>İngilizceTurkceSozlukDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

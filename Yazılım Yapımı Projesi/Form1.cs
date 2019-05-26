@@ -15,260 +15,93 @@ namespace Yazılım_Yapımı_Projesi
         public Form1()
         {
             InitializeComponent();
-        }
-
-        SqlBaglanti bgl = new SqlBaglanti();
-        Random rnd = new Random();
-        int dogruSayac = 0;
-        int yanlisSayac = 0;
-/*
-        public void KelimeEzberle()
-        {
-            SqlCommand komut = new SqlCommand("select count (distinct (KelimeID)) from Table_Kelimeler", bgl.baglanti());
-            SqlDataReader dr = komut.ExecuteReader();
-            int topEleman = 0;
-            while (dr.Read())
-            {
-                topEleman = Convert.ToInt32(dr[0]);
-            }
-            bgl.baglanti().Close();
-
-            List<string> secilenTurkceKelime = new List<string>();
-            List<string> secilenIngilizceKelime = new List<string>();
-            List<string> secilenOrnekCumle = new List<string>();
-            List<string> secilenKelimeTur = new List<string>();
-
-           
-            SqlCommand komut1 = new SqlCommand("select KelimeTuru,İngilizceKelime,TurkceKarsılıgı,OrnekCumle  FROM Table_Kelimeler", bgl.baglanti());
-            SqlDataReader dr1 = komut1.ExecuteReader();
-                
-                while (dr1.Read())
-                {
-                    secilenOrnekCumle.Add(dr1["OrnekCumle"].ToString());
-                    secilenIngilizceKelime.Add(dr1["İngilizceKelime"].ToString());
-                    secilenTurkceKelime.Add(dr1["TurkceKarsılıgı"].ToString());
-                    secilenKelimeTur.Add(dr1["KelimeTuru"].ToString());
-                }
-                bgl.baglanti().Close();
-                
-          
-            string[] secilenTurkceKelimeDizi = secilenTurkceKelime.ToArray();
-            string[] secilenIngilizceKelimeDizi = secilenIngilizceKelime.ToArray();
-            string[] secilenOrnekCumleDizi = secilenOrnekCumle.ToArray();
-            string[] secilenKelimeTurDizi = secilenKelimeTur.ToArray();
-            
-                SqlCommand komut2 = new SqlCommand("select top (3) KelimeTuru,İngilizceKelime,TurkceKarsılıgı,OrnekCumle  FROM Table_Kelimeler order by NEWID();", bgl.baglanti());
-                SqlDataReader dr2 = komut2.ExecuteReader();
-                List<string> rndTurkceKelime = new List<string>();
-                List<string> rndIngilizceKelime = new List<string>();
-                List<string> rndOrnekCumle = new List<string>();
-                List<string> rndKelimeTur = new List<string>();
-                while (dr2.Read())
-                {
-                    rndOrnekCumle.Add(dr2["OrnekCumle"].ToString());
-                    rndIngilizceKelime.Add(dr2["İngilizceKelime"].ToString());
-                    rndTurkceKelime.Add(dr2["TurkceKarsılıgı"].ToString());
-                    rndKelimeTur.Add(dr2["KelimeTuru"].ToString());
-                }
-                bgl.baglanti().Close();
-                string[] rndTurkceKelimeDizi = rndTurkceKelime.ToArray();
-                string[] rndIngilizceKelimeDizi = rndIngilizceKelime.ToArray();
-                string[] rndOrnekCumleDizi = rndOrnekCumle.ToArray();
-                string[] rndKelimeTurDizi = rndKelimeTur.ToArray();
-
-            int i = 0;
-           
-                int randSayi = rnd.Next(1, 5);
-
-                switch (randSayi)
-                {
-                    case 1:
-                        rdBtnA.Text = secilenTurkceKelimeDizi[i];
-                        lblCtrlIngilizce.Text = secilenIngilizceKelimeDizi[i];
-                        lblCtrlTür.Text = secilenKelimeTurDizi[i];
-                        lblCtrlCumle.Text = secilenOrnekCumleDizi[i];
-                        rdBtnB.Text = rndTurkceKelimeDizi[0];
-                        rdBtnC.Text = rndTurkceKelimeDizi[1];
-                        rdBtnD.Text = rndTurkceKelimeDizi[2];
-                        if (rdBtnA.Checked == true)
-                        {
-                            dogruSayac++;
-                            txtEditDogru.Text = dogruSayac.ToString();
-                        }
-                        else
-                        {
-                            yanlisSayac++;
-                            txtEditYanlis.Text = yanlisSayac.ToString();
-                        }
-                        rdBtnA.Checked = false;
-                        i++;
-                        break;
-                    case 2:
-                        rdBtnB.Text = secilenTurkceKelimeDizi[i];
-                        lblCtrlIngilizce.Text = secilenIngilizceKelimeDizi[i];
-                        lblCtrlTür.Text = secilenKelimeTurDizi[i];
-                        lblCtrlCumle.Text = secilenOrnekCumleDizi[i];
-                        rdBtnA.Text = rndTurkceKelimeDizi[0];
-                        rdBtnC.Text = rndTurkceKelimeDizi[1];
-                        rdBtnD.Text = rndTurkceKelimeDizi[2];
-                        if (rdBtnB.Checked == true)
-                        {
-                            dogruSayac++;
-                            txtEditDogru.Text = dogruSayac.ToString();
-                        }
-                        else
-                        {
-                            yanlisSayac++;
-                            txtEditYanlis.Text = yanlisSayac.ToString();
-                        }
-                        rdBtnB.Checked = false;
-                        i++;
-                        break;
-                    case 3:
-                        rdBtnC.Text = secilenTurkceKelimeDizi[i];
-                        lblCtrlIngilizce.Text = secilenIngilizceKelimeDizi[i];
-                        lblCtrlTür.Text = secilenKelimeTurDizi[i];
-                        lblCtrlCumle.Text = secilenOrnekCumleDizi[i];
-                        rdBtnA.Text = rndTurkceKelimeDizi[0];
-                        rdBtnB.Text = rndTurkceKelimeDizi[1];
-                        rdBtnD.Text = rndTurkceKelimeDizi[2];
-                        if (rdBtnC.Checked == true)
-                        {
-                            dogruSayac++;
-                            txtEditDogru.Text = dogruSayac.ToString();
-                        }
-                        else
-                        {
-                            yanlisSayac++;
-                            txtEditYanlis.Text = yanlisSayac.ToString();
-                        }
-                        rdBtnC.Checked = false;
-                        i++;
-                        break;
-                    case 4:
-                        rdBtnD.Text = secilenTurkceKelimeDizi[i];
-                        lblCtrlIngilizce.Text = secilenIngilizceKelimeDizi[i];
-                        lblCtrlTür.Text = secilenKelimeTurDizi[i];
-                        lblCtrlCumle.Text = secilenOrnekCumleDizi[i];
-                        rdBtnA.Text = rndTurkceKelimeDizi[0];
-                        rdBtnB.Text = rndTurkceKelimeDizi[1];
-                        rdBtnC.Text = rndTurkceKelimeDizi[2];
-                        if (rdBtnD.Checked == true)
-                        {
-                            dogruSayac++;
-                            txtEditDogru.Text = dogruSayac.ToString();
-                        }
-                        else
-                        {
-                            yanlisSayac++;
-                            txtEditYanlis.Text = yanlisSayac.ToString();
-                        }
-                        rdBtnD.Checked = false;
-                        i++;
-                        break;
-                }
-
-            
 
         }
-*/
+
+        // Global verilerimiz:
+
+        VeritabaniIslemleri islem = new VeritabaniIslemleri();
+        List<Kelime> kelimeler = new List<Kelime>();
+        Kelime kelime = new Kelime();
+        SqlConnection baglan = new SqlConnection(@"Data Source=LAPTOP-6UFOC7K3\MSSQLSERVER01;Initial Catalog=İngilizceTurkceSozluk;Integrated Security=True");
+        int dogruSayac = 0, yanlisSayac = 0;
+
+        //  ***************** Kelime Ezberleme Bölümü ************************
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.table_KelimelerTableAdapter1.Fill(this.İngilizceTurkceSozlukDataSet4.Table_Kelimeler);
+            this.table_KelimelerTableAdapter.Fill(this.İngilizceTurkceSozlukDataSet3.Table_Kelimeler);
 
-            this.table_KelimelerTableAdapter.Fill(this.İngilizceTurkceSozlukDataSet.Table_Kelimeler);
-           
-            SqlCommand komut = new SqlCommand("select count (distinct (KelimeID)) from Table_Kelimeler",bgl.baglanti());
-            SqlDataReader dr = komut.ExecuteReader();
-            int topEleman = 0;
-            while (dr.Read())
-            {
-              topEleman=Convert.ToInt32(dr[0]);
-            }
-            bgl.baglanti().Close();
-           
-
-            SqlCommand komut1 = new SqlCommand("select top (4) KelimeID,KelimeTuru,İngilizceKelime,TurkceKarsılıgı,OrnekCumle  FROM Table_Kelimeler order by NEWID();", bgl.baglanti());
-            SqlDataReader dr1 = komut1.ExecuteReader();
-            List<string> turkceKelime = new List<string>();
-            List<int> kelimeId = new List<int>();
-            List<string> ingilizceKelime = new List<string>();
-            List<string> ornekCumle = new List<string>();
-            List<string> kelimeTur = new List<string>();
-            while (dr1.Read())
-            {
-                ornekCumle.Add(dr1["OrnekCumle"].ToString());
-                ingilizceKelime.Add(dr1["İngilizceKelime"].ToString());
-                kelimeId.Add(Convert.ToInt32(dr1["KelimeID"]));
-                turkceKelime.Add(dr1["TurkceKarsılıgı"].ToString());
-                kelimeTur.Add(dr1["KelimeTuru"].ToString());
-            }
-            bgl.baglanti().Close();
-            string[] turkceKelimeDizi = turkceKelime.ToArray();
-            string[] ingilizceKelimeDizi = ingilizceKelime.ToArray();
-            string[] ornekCumleDizi = ornekCumle.ToArray();
-            string[] kelimeTurDizi = kelimeTur.ToArray();
-            int[] kelimeIdDizi = kelimeId.ToArray();
-
-            rdBtnA.Text = turkceKelimeDizi[0].ToString();
-            rdBtnB.Text = turkceKelimeDizi[1].ToString();
-            rdBtnC.Text = turkceKelimeDizi[2].ToString();
-            rdBtnD.Text = turkceKelimeDizi[3].ToString();
-
-            int randSayi = rnd.Next(1, 5);
-
-
-            switch (randSayi)
-            {
-                case 1:
-                    rdBtnA.Text = turkceKelimeDizi[0];
-                    lblCtrlIngilizce.Text = ingilizceKelimeDizi[0];
-                    lblCtrlCumle.Text = ornekCumleDizi[0];
-                    lblCtrlTür.Text = kelimeTurDizi[0];
-                    txtEditDogru.Text = dogruSayac.ToString();
-                    txtEditYanlis.Text = yanlisSayac.ToString();
-                    break;
-                case 2:
-                    rdBtnB.Text = turkceKelimeDizi[1];
-                    lblCtrlIngilizce.Text = ingilizceKelimeDizi[1];
-                    lblCtrlCumle.Text = ornekCumleDizi[1];
-                    lblCtrlTür.Text = kelimeTurDizi[1];
-                    txtEditDogru.Text = dogruSayac.ToString();
-                    txtEditYanlis.Text = yanlisSayac.ToString();
-                    break;
-                case 3:
-                    rdBtnC.Text = turkceKelimeDizi[2];
-                    lblCtrlIngilizce.Text = ingilizceKelimeDizi[2];
-                    lblCtrlCumle.Text = ornekCumleDizi[2];
-                    lblCtrlTür.Text = kelimeTurDizi[2];
-                    txtEditDogru.Text = dogruSayac.ToString();
-                    txtEditYanlis.Text = yanlisSayac.ToString();
-                    break;
-                case 4:
-                    rdBtnD.Text = turkceKelimeDizi[3];
-                    lblCtrlIngilizce.Text = ingilizceKelimeDizi[3];
-                    lblCtrlCumle.Text = ornekCumleDizi[3];
-                    lblCtrlTür.Text = kelimeTurDizi[3];
-                    txtEditDogru.Text = dogruSayac.ToString();
-                    txtEditYanlis.Text = yanlisSayac.ToString();
-                    break;
-
-
-            }
-
-          
+            KelimeGetir();
+            islem.SeviyeArttir(kelime);
+            Guncelle();
+            SoruGetir();
         }
 
-        public void KelimeEkle()
+        private void smpBtnIlerle_Click(object sender, EventArgs e)
         {
+            KelimeGetir();
+            islem.SeviyeArttir(kelime);
+            Guncelle();
+        }
+
+        void KelimeGetir()
+        {
+            baglan.Open();
+            SqlCommand komut = new SqlCommand("select top 1 KelimeID,KelimeTuru,İngilizceKelime,TurkceKarsılıgı,OrnekCumle,Seviye,Tarih from Table_Kelimeler where Seviye=0 order by NEWID()", baglan);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                kelime.kelimeId = Convert.ToInt32(dr["KelimeID"]);
+                kelime.kelimeTuru = dr["KelimeTuru"].ToString();
+                kelime.ingKelime = dr["İngilizceKelime"].ToString();
+                kelime.turkceKelime = dr["TurkceKarsılıgı"].ToString();
+                kelime.ornekCumle = dr["OrnekCumle"].ToString();
+                kelime.seviye = dr["Seviye"].ToString();
+                kelime.tarih = dr["Tarih"].ToString();
+                kelimeler.Add(kelime);
+                lblCtrlIngilizce.Text = kelime.ingKelime;
+                lblCtrlTür.Text = kelime.kelimeTuru;
+                lblCtrlCumle.Text = kelime.ornekCumle;
+                lblCtrlTurkce.Text = kelime.turkceKelime;
+            }
+            baglan.Close();
+        }
+
+        void Guncelle()
+        {
+            kelime.tarih = DateTime.Now.AddDays(1).ToShortDateString();
+            baglan.Open();
+            SqlCommand komut = new SqlCommand();
+            komut.Connection = baglan;
+            komut.CommandText = "update Table_Kelimeler set Tarih='" + kelime.tarih + "'where TurkceKarsılıgı='" + lblCtrlTurkce.Text + "'";
+            komut.Parameters.AddWithValue("@TurkceKarsılıgı", lblCtrlTurkce.Text);
+            komut.Parameters.AddWithValue("@Tarih", kelime.tarih);
+            komut.ExecuteNonQuery();
+            baglan.Close();
+        }
+        // ******************************************************************************************
+
+        // ************* Kelime Ekleme Bölümü *******************
+
+        private void smpBtnEkle_Click(object sender, EventArgs e)
+        {
+            string currentDate = DateTime.Now.Year + "." + DateTime.Now.Month + "." + DateTime.Now.Day;
+
+            Kelime kelime = new Kelime();
+            kelime.ingKelime = txtEditIngilizce.Text;
+            kelime.turkceKelime = txtEditTurkce.Text;
+            kelime.kelimeTuru = cmbBoxEditTur.Text;
+            kelime.ornekCumle = txtEditCumle.Text;
+            kelime.tarih = currentDate;
+            kelime.seviye = 0.ToString();
+
+            VeritabaniIslemleri islem = new VeritabaniIslemleri();
+
             if (KontrolEt())
             {
-                SqlCommand komut = new SqlCommand("insert into Table_Kelimeler (KelimeTuru,İngilizceKelime,TurkceKarsılıgı,OrnekCumle) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
-                komut.Parameters.AddWithValue("@p1", cmbBoxEditTur.Text);
-                komut.Parameters.AddWithValue("@p2", txtEditIngilizce.Text);
-                komut.Parameters.AddWithValue("@p3", txtEditTurkce.Text);
-                komut.Parameters.AddWithValue("@p4", txtEditCumle.Text);
-                komut.ExecuteNonQuery();
-                bgl.baglanti().Close();
+                islem.KelimeEkle(kelime);
                 MessageBox.Show("Kelime basariyla eklendi. :)", "BILGI", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Temizle();
             }
@@ -284,7 +117,7 @@ namespace Yazılım_Yapımı_Projesi
             txtEditCumle.Text = "";
         }
 
-        public bool KontrolEt()
+        public bool KontrolEt() // Kelime ekleme kısmındaki tüm textbox'ların doldurulması için kontrol ediyoruz.
         {
             bool isTrue = true;
 
@@ -295,138 +128,112 @@ namespace Yazılım_Yapımı_Projesi
 
             return isTrue;
         }
+        // *************************************************************************
+        
+        // ************************ Kelime Güncelleme ve Silme Bölümü **************************
 
-        private void smpBtnEkle_Click(object sender, EventArgs e)
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e) //GridKontrol'deki verileri textbox'lara çekiyoruz.
         {
-            KelimeEkle();
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            txtIslemId.Text = dr[0].ToString();
+            txtIslemTur.Text = dr[1].ToString();
+            txtIslemIng.Text = dr[2].ToString();
+            txtIslemTurkce.Text = dr[3].ToString();
+            txtIslemCumle.Text = dr[4].ToString();
         }
 
-        private void smpBtnTamam_Click(object sender, EventArgs e)
+        private void btnIslemGuncelle_Click(object sender, EventArgs e)
         {
-           
-            /*
-            SqlCommand komut = new SqlCommand("select count (distinct (KelimeID)) from Table_Kelimeler", bgl.baglanti());
+            Kelime kelime = new Kelime();
+            kelime.kelimeId = Convert.ToInt32(txtIslemId.Text);
+            kelime.ingKelime = txtIslemIng.Text;
+            kelime.turkceKelime = txtIslemTurkce.Text;
+            kelime.kelimeTuru = txtIslemTur.Text;
+            kelime.ornekCumle = txtIslemCumle.Text;
+
+            VeritabaniIslemleri islem = new VeritabaniIslemleri();
+            islem.KelimeGuncelle(kelime);
+            MessageBox.Show("Kelime başarıyla güncellendi.", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void btnIslemSil_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtIslemId.Text);
+            VeritabaniIslemleri islem = new VeritabaniIslemleri();
+            islem.KelimeSil(id);
+            MessageBox.Show("Kelime başarıyla silindi.", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        //****************************************************************************
+
+        // ********************** Test Bölümü ******************************
+
+        private void btnTestTamam_Click(object sender, EventArgs e)
+        {
+            CevapKonrol();
+        }
+
+        private void btnTestIlerle_Click(object sender, EventArgs e)
+        {
+            txtTestCevap.Text = "";
+            SoruGetir();
+        }
+
+        void SoruGetir()
+        {
+            baglan.Open();
+            kelime.tarih = DateTime.Now.ToShortDateString();
+            SqlCommand komut = new SqlCommand("select top 1 KelimeID,KelimeTuru,İngilizceKelime,TurkceKarsılıgı,OrnekCumle,Tarih from Table_Kelimeler where Seviye>=1 and Seviye<=5 and Tarih=@tarih order by NEWID()", baglan);
+            komut.Parameters.AddWithValue("@tarih", kelime.tarih);
+            komut.ExecuteNonQuery();
             SqlDataReader dr = komut.ExecuteReader();
-            int topEleman = 0;
             while (dr.Read())
             {
-                topEleman = Convert.ToInt32(dr[0]);
+                kelime.kelimeId = Convert.ToInt32(dr["KelimeID"]);
+                kelime.kelimeTuru = dr["KelimeTuru"].ToString();
+                kelime.ingKelime = dr["İngilizceKelime"].ToString();
+                kelime.turkceKelime = dr["TurkceKarsılıgı"].ToString();
+                kelime.ornekCumle = dr["OrnekCumle"].ToString();
+                kelimeler.Add(kelime);
+                lblTestIng.Text = kelime.ingKelime;
+                lblTestTur.Text = kelime.kelimeTuru;
+                lblTestCumle.Text = kelime.ornekCumle;
             }
-            bgl.baglanti().Close();
-            */
-          
-            SqlCommand komut1 = new SqlCommand("select top (4) KelimeID,KelimeTuru,İngilizceKelime,TurkceKarsılıgı,OrnekCumle  FROM Table_Kelimeler order by NEWID();", bgl.baglanti());
-            SqlDataReader dr1 = komut1.ExecuteReader();
-            List<string> turkceKelime = new List<string>();
-            List<int> kelimeId = new List<int>();
-            List<string> ingilizceKelime = new List<string>();
-            List<string> ornekCumle = new List<string>();
-            List<string> kelimeTur = new List<string>();
-            while (dr1.Read())
-            {
-                ornekCumle.Add(dr1["OrnekCumle"].ToString());
-                ingilizceKelime.Add(dr1["İngilizceKelime"].ToString());
-                kelimeId.Add(Convert.ToInt32(dr1["KelimeID"]));
-                turkceKelime.Add(dr1["TurkceKarsılıgı"].ToString());
-                kelimeTur.Add(dr1["KelimeTuru"].ToString());
-            }
-            bgl.baglanti().Close();
-            string[] turkceKelimeDizi = turkceKelime.ToArray();
-            string[] ingilizceKelimeDizi = ingilizceKelime.ToArray();
-            string[] ornekCumleDizi = ornekCumle.ToArray();
-            string[] kelimeTurDizi = kelimeTur.ToArray();
-            int[] kelimeIdDizi = kelimeId.ToArray();
-
-            rdBtnA.Text = turkceKelimeDizi[0].ToString();
-            rdBtnB.Text = turkceKelimeDizi[1].ToString();
-            rdBtnC.Text = turkceKelimeDizi[2].ToString();
-            rdBtnD.Text = turkceKelimeDizi[3].ToString();
-
-            int randSayi = rnd.Next(1, 5);
-
-
-            switch (randSayi)
-            {
-                case 1:
-                    rdBtnA.Text = turkceKelimeDizi[0];
-                    lblCtrlIngilizce.Text = ingilizceKelimeDizi[0];
-                    lblCtrlCumle.Text = ornekCumleDizi[0];
-                    lblCtrlTür.Text = kelimeTurDizi[0];
-                    if (rdBtnA.Checked == true)
-                    {
-                        dogruSayac++;
-                        txtEditDogru.Text = dogruSayac.ToString();
-                    }
-
-                    else
-                    {
-                        yanlisSayac++;
-                        txtEditYanlis.Text = yanlisSayac.ToString();
-                    }
-                    rdBtnA.Checked = false;
-                    break;
-                case 2:
-                    rdBtnB.Text = turkceKelimeDizi[1];
-                    lblCtrlIngilizce.Text = ingilizceKelimeDizi[1];
-                    lblCtrlCumle.Text = ornekCumleDizi[1];
-                    lblCtrlTür.Text = kelimeTurDizi[1];
-                    if (rdBtnB.Checked == true)
-                    {
-
-                        dogruSayac++;
-                        txtEditDogru.Text = dogruSayac.ToString();
-                    }
-
-                    else
-                    {
-                        yanlisSayac++;
-                        txtEditYanlis.Text = yanlisSayac.ToString();
-                    }
-                    rdBtnB.Checked = false;
-                    break;
-                case 3:
-                    rdBtnC.Text = turkceKelimeDizi[2];
-                    lblCtrlIngilizce.Text = ingilizceKelimeDizi[2];
-                    lblCtrlCumle.Text = ornekCumleDizi[2];
-                    lblCtrlTür.Text = kelimeTurDizi[2];
-                    if (rdBtnC.Checked == true)
-                    {
-
-                        dogruSayac++;
-                        txtEditDogru.Text = dogruSayac.ToString();
-                    }
-
-                    else
-                    {
-                        yanlisSayac++;
-                        txtEditYanlis.Text = yanlisSayac.ToString();
-                    }
-                    rdBtnC.Checked = false;
-                    break;
-                case 4:
-                    rdBtnD.Text = turkceKelimeDizi[3];
-                    lblCtrlIngilizce.Text = ingilizceKelimeDizi[3];
-                    lblCtrlCumle.Text = ornekCumleDizi[3];
-                    lblCtrlTür.Text = kelimeTurDizi[3];
-                    if (rdBtnD.Checked == true)
-                    {
-
-                        dogruSayac++;
-                        txtEditDogru.Text = dogruSayac.ToString();
-                    }
-
-                    else
-                    {
-                        yanlisSayac++;
-                        txtEditYanlis.Text = yanlisSayac.ToString();
-                    }
-                    rdBtnD.Checked = false;
-                    break;
-
-
-            }
-          
+            dr.Close();
+            baglan.Close();
         }
+
+        void CevapKonrol()
+        {          
+            baglan.Open();
+            SqlCommand komut = new SqlCommand();
+            komut.Connection = baglan;
+            komut.CommandText = "select * from Table_Kelimeler where TurkceKarsılıgı='" + kelime.turkceKelime + "'and İngilizceKelime='" + kelime.ingKelime + "' ";
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                if (txtTestCevap.Text.ToLower() == kelime.turkceKelime)
+                {                 
+                    islem.SeviyeArttir(kelime);
+                    islem.TarihiAyarla(kelime);
+                    dogruSayac++;
+                    txtDogru.Text = dogruSayac.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Yanlış cevap !! Doğrusu: " + kelime.turkceKelime,"UYARI",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    yanlisSayac++;                    
+                    txtYanlis.Text = yanlisSayac.ToString();
+                    islem.SeviyeAzalt(kelime);
+                    islem.TarihiAyarla(kelime);
+                }
+            }
+            dr.Close();
+            baglan.Close();
+        }
+        //**************************************************************************************
+
+        // Textbox'lara rakam girişini engelliyoruz.
 
         private void txtEditIngilizce_KeyPress(object sender, KeyPressEventArgs e)
         {

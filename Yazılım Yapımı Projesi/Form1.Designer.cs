@@ -33,25 +33,35 @@
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.kelimeTest = new DevExpress.XtraTab.XtraTabPage();
-            this.kelimeEzber = new DevExpress.XtraTab.XtraTabPage();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.txtYanlis = new DevExpress.XtraEditors.TextEdit();
+            this.txtDogru = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.rdBtnD = new System.Windows.Forms.RadioButton();
-            this.rdBtnC = new System.Windows.Forms.RadioButton();
-            this.rdBtnB = new System.Windows.Forms.RadioButton();
-            this.rdBtnA = new System.Windows.Forms.RadioButton();
-            this.smpBtnTamam = new DevExpress.XtraEditors.SimpleButton();
-            this.txtEditYanlis = new DevExpress.XtraEditors.TextEdit();
-            this.txtEditDogru = new DevExpress.XtraEditors.TextEdit();
-            this.lblCtrlYanlis = new DevExpress.XtraEditors.LabelControl();
-            this.lblCtrlDogru = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.lblCtrlIstatistik = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.btnTestTamam = new DevExpress.XtraEditors.SimpleButton();
+            this.btnTestIlerle = new DevExpress.XtraEditors.SimpleButton();
+            this.txtTestCevap = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.lblTestCumle = new DevExpress.XtraEditors.LabelControl();
+            this.lblTestTur = new DevExpress.XtraEditors.LabelControl();
+            this.lblTestIng = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.kelimeEzber = new DevExpress.XtraTab.XtraTabPage();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.lblCtrlTurkce = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.smpBtnIlerle = new DevExpress.XtraEditors.SimpleButton();
             this.lblCtrlCumle = new DevExpress.XtraEditors.LabelControl();
-            this.lblCtrlSoru = new DevExpress.XtraEditors.LabelControl();
             this.lblCtrlTür = new DevExpress.XtraEditors.LabelControl();
             this.lblCtrlIngilizce = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -68,27 +78,56 @@
             this.lblIngilizce = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sozlukPencere = new DevExpress.XtraTab.XtraTabControl();
-            this.kelimeDepo = new DevExpress.XtraTab.XtraTabPage();
+            this.kelimeIslem = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.tableKelimelerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.İngilizceTurkceSozlukDataSet = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet();
+            this.İngilizceTurkceSozlukDataSet3 = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet3();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colKelimeID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colKelimeTuru = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colİngilizceKelime = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTurkceKarsılıgı = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colOrnekCumle = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colGirilmeTarihi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnIslemGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.btnIslemSil = new DevExpress.XtraEditors.SimpleButton();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.txtIslemIng = new DevExpress.XtraEditors.TextEdit();
+            this.txtIslemTurkce = new DevExpress.XtraEditors.TextEdit();
+            this.txtIslemTur = new DevExpress.XtraEditors.TextEdit();
+            this.txtIslemCumle = new DevExpress.XtraEditors.TextEdit();
+            this.txtIslemId = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.kelimeDepo = new DevExpress.XtraTab.XtraTabPage();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.tableKelimelerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.İngilizceTurkceSozlukDataSet4 = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet4();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colKelimeID1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colKelimeTuru1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colİngilizceKelime1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTurkceKarsılıgı1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOrnekCumle1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSeviye = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTarih = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dashboardDesigner1 = new DevExpress.DashboardWin.DashboardDesigner();
-            this.table_KelimelerTableAdapter = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSetTableAdapters.Table_KelimelerTableAdapter();
-            this.kelimeEzber.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.table_KelimelerTableAdapter = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet3TableAdapters.Table_KelimelerTableAdapter();
+            this.table_KelimelerTableAdapter1 = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet4TableAdapters.Table_KelimelerTableAdapter();
+            this.ingilizceTurkceSozlukDataSet1 = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet();
+            this.kelimeTest.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtYanlis.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDogru.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEditYanlis.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEditDogru.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTestCevap.Properties)).BeginInit();
+            this.kelimeEzber.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.kelimeEkle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBoxEditTur.Properties)).BeginInit();
@@ -98,11 +137,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sozlukPencere)).BeginInit();
             this.sozlukPencere.SuspendLayout();
-            this.kelimeDepo.SuspendLayout();
+            this.kelimeIslem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableKelimelerBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIslemIng.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIslemTurkce.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIslemTur.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIslemCumle.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIslemId.Properties)).BeginInit();
+            this.kelimeDepo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableKelimelerBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingilizceTurkceSozlukDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
@@ -135,11 +187,239 @@
             this.kelimeTest.Appearance.HeaderHotTracked.BorderColor = System.Drawing.Color.DodgerBlue;
             this.kelimeTest.Appearance.HeaderHotTracked.Options.UseBackColor = true;
             this.kelimeTest.Appearance.HeaderHotTracked.Options.UseBorderColor = true;
+            this.kelimeTest.Controls.Add(this.txtYanlis);
+            this.kelimeTest.Controls.Add(this.txtDogru);
+            this.kelimeTest.Controls.Add(this.labelControl22);
+            this.kelimeTest.Controls.Add(this.labelControl21);
+            this.kelimeTest.Controls.Add(this.labelControl20);
+            this.kelimeTest.Controls.Add(this.labelControl19);
+            this.kelimeTest.Controls.Add(this.pictureBox5);
+            this.kelimeTest.Controls.Add(this.pictureBox4);
+            this.kelimeTest.Controls.Add(this.labelControl11);
+            this.kelimeTest.Controls.Add(this.groupControl3);
             this.kelimeTest.Image = ((System.Drawing.Image)(resources.GetObject("kelimeTest.Image")));
             this.kelimeTest.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kelimeTest.Name = "kelimeTest";
             this.kelimeTest.Size = new System.Drawing.Size(1144, 593);
             this.kelimeTest.Text = "Test";
+            // 
+            // txtYanlis
+            // 
+            this.txtYanlis.Location = new System.Drawing.Point(1004, 387);
+            this.txtYanlis.Name = "txtYanlis";
+            this.txtYanlis.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtYanlis.Properties.Appearance.Options.UseFont = true;
+            this.txtYanlis.Size = new System.Drawing.Size(100, 22);
+            this.txtYanlis.TabIndex = 9;
+            // 
+            // txtDogru
+            // 
+            this.txtDogru.Location = new System.Drawing.Point(1004, 339);
+            this.txtDogru.Name = "txtDogru";
+            this.txtDogru.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDogru.Properties.Appearance.Options.UseFont = true;
+            this.txtDogru.Size = new System.Drawing.Size(100, 22);
+            this.txtDogru.TabIndex = 8;
+            // 
+            // labelControl22
+            // 
+            this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl22.Appearance.Options.UseFont = true;
+            this.labelControl22.Location = new System.Drawing.Point(870, 390);
+            this.labelControl22.Name = "labelControl22";
+            this.labelControl22.Size = new System.Drawing.Size(114, 21);
+            this.labelControl22.TabIndex = 7;
+            this.labelControl22.Text = "Yanlış Cevap:";
+            // 
+            // labelControl21
+            // 
+            this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl21.Appearance.Options.UseFont = true;
+            this.labelControl21.Location = new System.Drawing.Point(870, 342);
+            this.labelControl21.Name = "labelControl21";
+            this.labelControl21.Size = new System.Drawing.Size(116, 21);
+            this.labelControl21.TabIndex = 6;
+            this.labelControl21.Text = "Doğru Cevap:";
+            // 
+            // labelControl20
+            // 
+            this.labelControl20.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("labelControl20.Appearance.Image")));
+            this.labelControl20.Appearance.Options.UseImage = true;
+            this.labelControl20.Location = new System.Drawing.Point(974, 283);
+            this.labelControl20.Name = "labelControl20";
+            this.labelControl20.Size = new System.Drawing.Size(32, 32);
+            this.labelControl20.TabIndex = 5;
+            // 
+            // labelControl19
+            // 
+            this.labelControl19.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl19.Appearance.Options.UseFont = true;
+            this.labelControl19.Location = new System.Drawing.Point(963, 225);
+            this.labelControl19.Name = "labelControl19";
+            this.labelControl19.Size = new System.Drawing.Size(96, 34);
+            this.labelControl19.TabIndex = 4;
+            this.labelControl19.Text = "İstatistik";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(897, 225);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(40, 37);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(137, 35);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(72, 72);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl11.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Appearance.Options.UseForeColor = true;
+            this.labelControl11.Location = new System.Drawing.Point(230, 39);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(535, 68);
+            this.labelControl11.TabIndex = 1;
+            this.labelControl11.Text = "Kendinizi Test Edin ...";
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.btnTestTamam);
+            this.groupControl3.Controls.Add(this.btnTestIlerle);
+            this.groupControl3.Controls.Add(this.txtTestCevap);
+            this.groupControl3.Controls.Add(this.labelControl18);
+            this.groupControl3.Controls.Add(this.lblTestCumle);
+            this.groupControl3.Controls.Add(this.lblTestTur);
+            this.groupControl3.Controls.Add(this.lblTestIng);
+            this.groupControl3.Controls.Add(this.labelControl14);
+            this.groupControl3.Controls.Add(this.labelControl13);
+            this.groupControl3.Controls.Add(this.labelControl12);
+            this.groupControl3.Location = new System.Drawing.Point(57, 124);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(777, 443);
+            this.groupControl3.TabIndex = 0;
+            this.groupControl3.Text = "SORU:";
+            // 
+            // btnTestTamam
+            // 
+            this.btnTestTamam.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnTestTamam.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTestTamam.Appearance.Options.UseBackColor = true;
+            this.btnTestTamam.Appearance.Options.UseFont = true;
+            this.btnTestTamam.AppearanceHovered.BackColor = System.Drawing.Color.Tomato;
+            this.btnTestTamam.AppearanceHovered.Options.UseBackColor = true;
+            this.btnTestTamam.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.btnTestTamam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.btnTestTamam.Location = new System.Drawing.Point(273, 332);
+            this.btnTestTamam.Name = "btnTestTamam";
+            this.btnTestTamam.Size = new System.Drawing.Size(160, 45);
+            this.btnTestTamam.TabIndex = 9;
+            this.btnTestTamam.Text = "Tamam";
+            this.btnTestTamam.Click += new System.EventHandler(this.btnTestTamam_Click);
+            // 
+            // btnTestIlerle
+            // 
+            this.btnTestIlerle.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnTestIlerle.Appearance.Options.UseBackColor = true;
+            this.btnTestIlerle.AppearanceHovered.BackColor = System.Drawing.Color.Tomato;
+            this.btnTestIlerle.AppearanceHovered.Options.UseBackColor = true;
+            this.btnTestIlerle.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.btnTestIlerle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTestIlerle.ImageOptions.Image")));
+            this.btnTestIlerle.Location = new System.Drawing.Point(533, 265);
+            this.btnTestIlerle.Name = "btnTestIlerle";
+            this.btnTestIlerle.Size = new System.Drawing.Size(118, 36);
+            this.btnTestIlerle.TabIndex = 8;
+            this.btnTestIlerle.Text = "İlerle";
+            this.btnTestIlerle.Click += new System.EventHandler(this.btnTestIlerle_Click);
+            // 
+            // txtTestCevap
+            // 
+            this.txtTestCevap.Location = new System.Drawing.Point(185, 269);
+            this.txtTestCevap.Name = "txtTestCevap";
+            this.txtTestCevap.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTestCevap.Properties.Appearance.Options.UseFont = true;
+            this.txtTestCevap.Size = new System.Drawing.Size(322, 32);
+            this.txtTestCevap.TabIndex = 7;
+            // 
+            // labelControl18
+            // 
+            this.labelControl18.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl18.Appearance.Options.UseFont = true;
+            this.labelControl18.Location = new System.Drawing.Point(153, 215);
+            this.labelControl18.Name = "labelControl18";
+            this.labelControl18.Size = new System.Drawing.Size(440, 25);
+            this.labelControl18.TabIndex = 6;
+            this.labelControl18.Text = "Yukarıdaki kelimenin türkçe karşılığı nedir ?";
+            // 
+            // lblTestCumle
+            // 
+            this.lblTestCumle.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTestCumle.Appearance.Options.UseFont = true;
+            this.lblTestCumle.Location = new System.Drawing.Point(305, 165);
+            this.lblTestCumle.Name = "lblTestCumle";
+            this.lblTestCumle.Size = new System.Drawing.Size(56, 26);
+            this.lblTestCumle.TabIndex = 5;
+            this.lblTestCumle.Text = "cumle";
+            // 
+            // lblTestTur
+            // 
+            this.lblTestTur.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTestTur.Appearance.Options.UseFont = true;
+            this.lblTestTur.Location = new System.Drawing.Point(305, 116);
+            this.lblTestTur.Name = "lblTestTur";
+            this.lblTestTur.Size = new System.Drawing.Size(27, 26);
+            this.lblTestTur.TabIndex = 4;
+            this.lblTestTur.Text = "tur";
+            // 
+            // lblTestIng
+            // 
+            this.lblTestIng.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTestIng.Appearance.Options.UseFont = true;
+            this.lblTestIng.Location = new System.Drawing.Point(305, 67);
+            this.lblTestIng.Name = "lblTestIng";
+            this.lblTestIng.Size = new System.Drawing.Size(76, 26);
+            this.lblTestIng.TabIndex = 3;
+            this.lblTestIng.Text = "ingilizce";
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Lucida Calligraphy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl14.Appearance.Options.UseFont = true;
+            this.labelControl14.Location = new System.Drawing.Point(185, 165);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(83, 29);
+            this.labelControl14.TabIndex = 2;
+            this.labelControl14.Text = "Cumle:";
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Lucida Calligraphy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl13.Appearance.Options.UseFont = true;
+            this.labelControl13.Location = new System.Drawing.Point(216, 116);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(52, 29);
+            this.labelControl13.TabIndex = 1;
+            this.labelControl13.Text = "Tur:";
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Lucida Calligraphy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Location = new System.Drawing.Point(63, 67);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(208, 29);
+            this.labelControl12.TabIndex = 0;
+            this.labelControl12.Text = "Ingilizce Kelime:";
             // 
             // kelimeEzber
             // 
@@ -162,26 +442,9 @@
             this.kelimeEzber.Appearance.HeaderHotTracked.BorderColor = System.Drawing.Color.DodgerBlue;
             this.kelimeEzber.Appearance.HeaderHotTracked.Options.UseBackColor = true;
             this.kelimeEzber.Appearance.HeaderHotTracked.Options.UseBorderColor = true;
-            this.kelimeEzber.Controls.Add(this.pictureBox7);
-            this.kelimeEzber.Controls.Add(this.pictureBox6);
-            this.kelimeEzber.Controls.Add(this.pictureBox5);
-            this.kelimeEzber.Controls.Add(this.pictureBox4);
-            this.kelimeEzber.Controls.Add(this.rdBtnD);
-            this.kelimeEzber.Controls.Add(this.rdBtnC);
-            this.kelimeEzber.Controls.Add(this.rdBtnB);
-            this.kelimeEzber.Controls.Add(this.rdBtnA);
-            this.kelimeEzber.Controls.Add(this.smpBtnTamam);
-            this.kelimeEzber.Controls.Add(this.txtEditYanlis);
-            this.kelimeEzber.Controls.Add(this.txtEditDogru);
-            this.kelimeEzber.Controls.Add(this.lblCtrlYanlis);
-            this.kelimeEzber.Controls.Add(this.lblCtrlDogru);
-            this.kelimeEzber.Controls.Add(this.labelControl2);
-            this.kelimeEzber.Controls.Add(this.pictureBox3);
-            this.kelimeEzber.Controls.Add(this.lblCtrlIstatistik);
-            this.kelimeEzber.Controls.Add(this.lblCtrlCumle);
-            this.kelimeEzber.Controls.Add(this.lblCtrlSoru);
-            this.kelimeEzber.Controls.Add(this.lblCtrlTür);
-            this.kelimeEzber.Controls.Add(this.lblCtrlIngilizce);
+            this.kelimeEzber.Appearance.PageClient.BackColor = System.Drawing.Color.Turquoise;
+            this.kelimeEzber.Appearance.PageClient.Options.UseBackColor = true;
+            this.kelimeEzber.Controls.Add(this.groupControl1);
             this.kelimeEzber.Controls.Add(this.pictureBox2);
             this.kelimeEzber.Controls.Add(this.lblCtrlBaslik);
             this.kelimeEzber.Image = ((System.Drawing.Image)(resources.GetObject("kelimeEzber.Image")));
@@ -190,268 +453,139 @@
             this.kelimeEzber.Size = new System.Drawing.Size(1144, 593);
             this.kelimeEzber.Text = "Kelime Ezberleme";
             // 
-            // pictureBox7
+            // groupControl1
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(347, 342);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox7.TabIndex = 25;
-            this.pictureBox7.TabStop = false;
+            this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupControl1.Appearance.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.labelControl10);
+            this.groupControl1.Controls.Add(this.lblCtrlTurkce);
+            this.groupControl1.Controls.Add(this.labelControl9);
+            this.groupControl1.Controls.Add(this.labelControl8);
+            this.groupControl1.Controls.Add(this.labelControl7);
+            this.groupControl1.Controls.Add(this.smpBtnIlerle);
+            this.groupControl1.Controls.Add(this.lblCtrlCumle);
+            this.groupControl1.Controls.Add(this.lblCtrlTür);
+            this.groupControl1.Controls.Add(this.lblCtrlIngilizce);
+            this.groupControl1.Location = new System.Drawing.Point(176, 106);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(800, 453);
+            this.groupControl1.TabIndex = 19;
+            this.groupControl1.Text = "KELİME:";
             // 
-            // pictureBox6
+            // labelControl10
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(347, 284);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox6.TabIndex = 24;
-            this.pictureBox6.TabStop = false;
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Lucida Calligraphy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Location = new System.Drawing.Point(127, 230);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(210, 29);
+            this.labelControl10.TabIndex = 30;
+            this.labelControl10.Text = "Turkce Karsılıgı:";
             // 
-            // pictureBox5
+            // lblCtrlTurkce
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(347, 401);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 23;
-            this.pictureBox5.TabStop = false;
+            this.lblCtrlTurkce.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCtrlTurkce.Appearance.Options.UseFont = true;
+            this.lblCtrlTurkce.Location = new System.Drawing.Point(364, 230);
+            this.lblCtrlTurkce.Name = "lblCtrlTurkce";
+            this.lblCtrlTurkce.Size = new System.Drawing.Size(58, 26);
+            this.lblCtrlTurkce.TabIndex = 29;
+            this.lblCtrlTurkce.Text = "turkce";
             // 
-            // pictureBox4
+            // labelControl9
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(347, 228);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 22;
-            this.pictureBox4.TabStop = false;
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Lucida Calligraphy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(254, 185);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(83, 29);
+            this.labelControl9.TabIndex = 28;
+            this.labelControl9.Text = "Cumle:";
             // 
-            // rdBtnD
+            // labelControl8
             // 
-            this.rdBtnD.AutoSize = true;
-            this.rdBtnD.BackColor = System.Drawing.Color.LightGray;
-            this.rdBtnD.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rdBtnD.ForeColor = System.Drawing.Color.Black;
-            this.rdBtnD.Location = new System.Drawing.Point(385, 398);
-            this.rdBtnD.Name = "rdBtnD";
-            this.rdBtnD.Size = new System.Drawing.Size(128, 37);
-            this.rdBtnD.TabIndex = 21;
-            this.rdBtnD.TabStop = true;
-            this.rdBtnD.Text = "D Şıkkı";
-            this.rdBtnD.UseVisualStyleBackColor = false;
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Lucida Calligraphy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Location = new System.Drawing.Point(269, 145);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(68, 29);
+            this.labelControl8.TabIndex = 27;
+            this.labelControl8.Text = "Turu:";
             // 
-            // rdBtnC
+            // labelControl7
             // 
-            this.rdBtnC.AutoSize = true;
-            this.rdBtnC.BackColor = System.Drawing.Color.LightGray;
-            this.rdBtnC.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rdBtnC.ForeColor = System.Drawing.Color.Black;
-            this.rdBtnC.Location = new System.Drawing.Point(385, 340);
-            this.rdBtnC.Name = "rdBtnC";
-            this.rdBtnC.Size = new System.Drawing.Size(124, 37);
-            this.rdBtnC.TabIndex = 20;
-            this.rdBtnC.TabStop = true;
-            this.rdBtnC.Text = "C Şıkkı";
-            this.rdBtnC.UseVisualStyleBackColor = false;
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Lucida Calligraphy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Location = new System.Drawing.Point(138, 102);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(215, 29);
+            this.labelControl7.TabIndex = 26;
+            this.labelControl7.Text = "Ingilizce Kelime: ";
             // 
-            // rdBtnB
+            // smpBtnIlerle
             // 
-            this.rdBtnB.AutoSize = true;
-            this.rdBtnB.BackColor = System.Drawing.Color.LightGray;
-            this.rdBtnB.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rdBtnB.ForeColor = System.Drawing.Color.Black;
-            this.rdBtnB.Location = new System.Drawing.Point(385, 284);
-            this.rdBtnB.Name = "rdBtnB";
-            this.rdBtnB.Size = new System.Drawing.Size(126, 37);
-            this.rdBtnB.TabIndex = 19;
-            this.rdBtnB.TabStop = true;
-            this.rdBtnB.Text = "B Şıkkı";
-            this.rdBtnB.UseVisualStyleBackColor = false;
-            // 
-            // rdBtnA
-            // 
-            this.rdBtnA.AutoSize = true;
-            this.rdBtnA.BackColor = System.Drawing.Color.LightGray;
-            this.rdBtnA.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rdBtnA.ForeColor = System.Drawing.Color.Black;
-            this.rdBtnA.Location = new System.Drawing.Point(385, 230);
-            this.rdBtnA.Name = "rdBtnA";
-            this.rdBtnA.Size = new System.Drawing.Size(126, 37);
-            this.rdBtnA.TabIndex = 18;
-            this.rdBtnA.TabStop = true;
-            this.rdBtnA.Text = "A Şıkkı";
-            this.rdBtnA.UseVisualStyleBackColor = false;
-            // 
-            // smpBtnTamam
-            // 
-            this.smpBtnTamam.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.smpBtnTamam.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.smpBtnTamam.Appearance.Options.UseBackColor = true;
-            this.smpBtnTamam.Appearance.Options.UseFont = true;
-            this.smpBtnTamam.AppearanceHovered.BackColor = System.Drawing.Color.Tomato;
-            this.smpBtnTamam.AppearanceHovered.Options.UseBackColor = true;
-            this.smpBtnTamam.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.smpBtnTamam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("smpBtnTamam.ImageOptions.Image")));
-            this.smpBtnTamam.Location = new System.Drawing.Point(353, 500);
-            this.smpBtnTamam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.smpBtnTamam.Name = "smpBtnTamam";
-            this.smpBtnTamam.Size = new System.Drawing.Size(160, 47);
-            this.smpBtnTamam.TabIndex = 17;
-            this.smpBtnTamam.Text = "Tamam";
-            this.smpBtnTamam.Click += new System.EventHandler(this.smpBtnTamam_Click);
-            // 
-            // txtEditYanlis
-            // 
-            this.txtEditYanlis.Location = new System.Drawing.Point(1025, 197);
-            this.txtEditYanlis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtEditYanlis.Name = "txtEditYanlis";
-            this.txtEditYanlis.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtEditYanlis.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.txtEditYanlis.Properties.Appearance.Options.UseBackColor = true;
-            this.txtEditYanlis.Properties.Appearance.Options.UseForeColor = true;
-            this.txtEditYanlis.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.txtEditYanlis.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.txtEditYanlis.Properties.Mask.EditMask = "n0";
-            this.txtEditYanlis.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtEditYanlis.Properties.ReadOnly = true;
-            this.txtEditYanlis.Size = new System.Drawing.Size(62, 22);
-            this.txtEditYanlis.TabIndex = 16;
-            // 
-            // txtEditDogru
-            // 
-            this.txtEditDogru.Location = new System.Drawing.Point(1025, 154);
-            this.txtEditDogru.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtEditDogru.Name = "txtEditDogru";
-            this.txtEditDogru.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtEditDogru.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.txtEditDogru.Properties.Appearance.Options.UseBackColor = true;
-            this.txtEditDogru.Properties.Appearance.Options.UseForeColor = true;
-            this.txtEditDogru.Properties.Mask.EditMask = "n0";
-            this.txtEditDogru.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtEditDogru.Properties.ReadOnly = true;
-            this.txtEditDogru.Size = new System.Drawing.Size(62, 22);
-            this.txtEditDogru.TabIndex = 15;
-            // 
-            // lblCtrlYanlis
-            // 
-            this.lblCtrlYanlis.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCtrlYanlis.Appearance.Options.UseFont = true;
-            this.lblCtrlYanlis.Location = new System.Drawing.Point(898, 198);
-            this.lblCtrlYanlis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lblCtrlYanlis.Name = "lblCtrlYanlis";
-            this.lblCtrlYanlis.Size = new System.Drawing.Size(115, 19);
-            this.lblCtrlYanlis.TabIndex = 14;
-            this.lblCtrlYanlis.Text = "Yanlış Cevap: ";
-            // 
-            // lblCtrlDogru
-            // 
-            this.lblCtrlDogru.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCtrlDogru.Appearance.Options.UseFont = true;
-            this.lblCtrlDogru.Location = new System.Drawing.Point(898, 155);
-            this.lblCtrlDogru.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lblCtrlDogru.Name = "lblCtrlDogru";
-            this.lblCtrlDogru.Size = new System.Drawing.Size(115, 19);
-            this.lblCtrlDogru.TabIndex = 13;
-            this.lblCtrlDogru.Text = "Doğru Cevap: ";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("labelControl2.Appearance.Image")));
-            this.labelControl2.Appearance.Options.UseImage = true;
-            this.labelControl2.Location = new System.Drawing.Point(995, 98);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(32, 32);
-            this.labelControl2.TabIndex = 12;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(934, 23);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
-            // lblCtrlIstatistik
-            // 
-            this.lblCtrlIstatistik.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCtrlIstatistik.Appearance.ForeColor = System.Drawing.Color.White;
-            this.lblCtrlIstatistik.Appearance.Options.UseFont = true;
-            this.lblCtrlIstatistik.Appearance.Options.UseForeColor = true;
-            this.lblCtrlIstatistik.Location = new System.Drawing.Point(979, 30);
-            this.lblCtrlIstatistik.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lblCtrlIstatistik.Name = "lblCtrlIstatistik";
-            this.lblCtrlIstatistik.Size = new System.Drawing.Size(96, 34);
-            this.lblCtrlIstatistik.TabIndex = 10;
-            this.lblCtrlIstatistik.Text = "İstatistik";
+            this.smpBtnIlerle.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
+            this.smpBtnIlerle.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.smpBtnIlerle.Appearance.Options.UseBackColor = true;
+            this.smpBtnIlerle.Appearance.Options.UseFont = true;
+            this.smpBtnIlerle.AppearanceHovered.BackColor = System.Drawing.Color.Tomato;
+            this.smpBtnIlerle.AppearanceHovered.Options.UseBackColor = true;
+            this.smpBtnIlerle.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.smpBtnIlerle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("smpBtnIlerle.ImageOptions.Image")));
+            this.smpBtnIlerle.Location = new System.Drawing.Point(254, 294);
+            this.smpBtnIlerle.Name = "smpBtnIlerle";
+            this.smpBtnIlerle.Size = new System.Drawing.Size(292, 43);
+            this.smpBtnIlerle.TabIndex = 25;
+            this.smpBtnIlerle.Text = "İlerle";
+            this.smpBtnIlerle.Click += new System.EventHandler(this.smpBtnIlerle_Click);
             // 
             // lblCtrlCumle
             // 
             this.lblCtrlCumle.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCtrlCumle.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lblCtrlCumle.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblCtrlCumle.Appearance.Options.UseFont = true;
             this.lblCtrlCumle.Appearance.Options.UseForeColor = true;
-            this.lblCtrlCumle.Location = new System.Drawing.Point(232, 147);
+            this.lblCtrlCumle.Location = new System.Drawing.Point(361, 188);
             this.lblCtrlCumle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblCtrlCumle.Name = "lblCtrlCumle";
             this.lblCtrlCumle.Size = new System.Drawing.Size(61, 26);
-            this.lblCtrlCumle.TabIndex = 4;
+            this.lblCtrlCumle.TabIndex = 21;
             this.lblCtrlCumle.Text = "Cümle";
-            // 
-            // lblCtrlSoru
-            // 
-            this.lblCtrlSoru.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCtrlSoru.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.lblCtrlSoru.Appearance.Options.UseFont = true;
-            this.lblCtrlSoru.Appearance.Options.UseForeColor = true;
-            this.lblCtrlSoru.Location = new System.Drawing.Point(227, 178);
-            this.lblCtrlSoru.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lblCtrlSoru.Name = "lblCtrlSoru";
-            this.lblCtrlSoru.Size = new System.Drawing.Size(468, 26);
-            this.lblCtrlSoru.TabIndex = 6;
-            this.lblCtrlSoru.Text = "Yukarıdaki kelimenin türkçe karşılığı nedir ?";
             // 
             // lblCtrlTür
             // 
             this.lblCtrlTür.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCtrlTür.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lblCtrlTür.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblCtrlTür.Appearance.Options.UseFont = true;
             this.lblCtrlTür.Appearance.Options.UseForeColor = true;
-            this.lblCtrlTür.Location = new System.Drawing.Point(233, 112);
+            this.lblCtrlTür.Location = new System.Drawing.Point(361, 145);
             this.lblCtrlTür.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblCtrlTür.Name = "lblCtrlTür";
             this.lblCtrlTür.Size = new System.Drawing.Size(34, 27);
-            this.lblCtrlTür.TabIndex = 3;
+            this.lblCtrlTür.TabIndex = 20;
             this.lblCtrlTür.Text = "Tür";
             // 
             // lblCtrlIngilizce
             // 
             this.lblCtrlIngilizce.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCtrlIngilizce.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lblCtrlIngilizce.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblCtrlIngilizce.Appearance.Options.UseFont = true;
             this.lblCtrlIngilizce.Appearance.Options.UseForeColor = true;
-            this.lblCtrlIngilizce.Location = new System.Drawing.Point(230, 77);
+            this.lblCtrlIngilizce.Location = new System.Drawing.Point(361, 102);
             this.lblCtrlIngilizce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblCtrlIngilizce.Name = "lblCtrlIngilizce";
-            this.lblCtrlIngilizce.Size = new System.Drawing.Size(156, 27);
-            this.lblCtrlIngilizce.TabIndex = 2;
-            this.lblCtrlIngilizce.Text = "İngilizce Kelime";
+            this.lblCtrlIngilizce.Size = new System.Drawing.Size(69, 27);
+            this.lblCtrlIngilizce.TabIndex = 19;
+            this.lblCtrlIngilizce.Text = "Kelime";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(147, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(271, 27);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 59);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.Size = new System.Drawing.Size(72, 72);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -463,7 +597,7 @@
             this.lblCtrlBaslik.Appearance.Options.UseBackColor = true;
             this.lblCtrlBaslik.Appearance.Options.UseFont = true;
             this.lblCtrlBaslik.Appearance.Options.UseForeColor = true;
-            this.lblCtrlBaslik.Location = new System.Drawing.Point(210, 4);
+            this.lblCtrlBaslik.Location = new System.Drawing.Point(360, 31);
             this.lblCtrlBaslik.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblCtrlBaslik.Name = "lblCtrlBaslik";
             this.lblCtrlBaslik.Size = new System.Drawing.Size(548, 68);
@@ -675,61 +809,61 @@
             this.sozlukPencere.TabIndex = 0;
             this.sozlukPencere.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.kelimeEkle,
+            this.kelimeIslem,
             this.kelimeEzber,
             this.kelimeTest,
             this.kelimeDepo});
             // 
-            // kelimeDepo
+            // kelimeIslem
             // 
-            this.kelimeDepo.Appearance.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kelimeDepo.Appearance.Header.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kelimeDepo.Appearance.Header.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kelimeDepo.Appearance.Header.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kelimeDepo.Appearance.Header.ForeColor = System.Drawing.Color.White;
-            this.kelimeDepo.Appearance.Header.Options.UseBackColor = true;
-            this.kelimeDepo.Appearance.Header.Options.UseBorderColor = true;
-            this.kelimeDepo.Appearance.Header.Options.UseFont = true;
-            this.kelimeDepo.Appearance.Header.Options.UseForeColor = true;
-            this.kelimeDepo.Appearance.HeaderActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kelimeDepo.Appearance.HeaderActive.BackColor2 = System.Drawing.Color.DodgerBlue;
-            this.kelimeDepo.Appearance.HeaderActive.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.kelimeDepo.Appearance.HeaderActive.Options.UseBackColor = true;
-            this.kelimeDepo.Appearance.HeaderActive.Options.UseBorderColor = true;
-            this.kelimeDepo.Appearance.HeaderHotTracked.BackColor = System.Drawing.Color.DodgerBlue;
-            this.kelimeDepo.Appearance.HeaderHotTracked.BackColor2 = System.Drawing.Color.DodgerBlue;
-            this.kelimeDepo.Appearance.HeaderHotTracked.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.kelimeDepo.Appearance.HeaderHotTracked.Options.UseBackColor = true;
-            this.kelimeDepo.Appearance.HeaderHotTracked.Options.UseBorderColor = true;
-            this.kelimeDepo.Controls.Add(this.gridControl1);
-            this.kelimeDepo.Image = ((System.Drawing.Image)(resources.GetObject("kelimeDepo.Image")));
-            this.kelimeDepo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.kelimeDepo.Name = "kelimeDepo";
-            this.kelimeDepo.Size = new System.Drawing.Size(1144, 593);
-            this.kelimeDepo.Text = "Kelime Deposu";
+            this.kelimeIslem.Appearance.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kelimeIslem.Appearance.Header.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kelimeIslem.Appearance.Header.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kelimeIslem.Appearance.Header.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kelimeIslem.Appearance.Header.ForeColor = System.Drawing.Color.White;
+            this.kelimeIslem.Appearance.Header.Options.UseBackColor = true;
+            this.kelimeIslem.Appearance.Header.Options.UseBorderColor = true;
+            this.kelimeIslem.Appearance.Header.Options.UseFont = true;
+            this.kelimeIslem.Appearance.Header.Options.UseForeColor = true;
+            this.kelimeIslem.Appearance.HeaderActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kelimeIslem.Appearance.HeaderActive.BackColor2 = System.Drawing.Color.DodgerBlue;
+            this.kelimeIslem.Appearance.HeaderActive.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.kelimeIslem.Appearance.HeaderActive.Options.UseBackColor = true;
+            this.kelimeIslem.Appearance.HeaderActive.Options.UseBorderColor = true;
+            this.kelimeIslem.Appearance.HeaderHotTracked.BackColor = System.Drawing.Color.DodgerBlue;
+            this.kelimeIslem.Appearance.HeaderHotTracked.BackColor2 = System.Drawing.Color.DodgerBlue;
+            this.kelimeIslem.Appearance.HeaderHotTracked.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.kelimeIslem.Appearance.HeaderHotTracked.Options.UseBackColor = true;
+            this.kelimeIslem.Appearance.HeaderHotTracked.Options.UseBorderColor = true;
+            this.kelimeIslem.Controls.Add(this.gridControl1);
+            this.kelimeIslem.Controls.Add(this.btnIslemGuncelle);
+            this.kelimeIslem.Controls.Add(this.btnIslemSil);
+            this.kelimeIslem.Controls.Add(this.groupControl2);
+            this.kelimeIslem.Image = ((System.Drawing.Image)(resources.GetObject("kelimeIslem.Image")));
+            this.kelimeIslem.Name = "kelimeIslem";
+            this.kelimeIslem.Size = new System.Drawing.Size(1144, 593);
+            this.kelimeIslem.Text = "Kelime İşlemleri";
             // 
             // gridControl1
             // 
             this.gridControl1.DataSource = this.tableKelimelerBindingSource;
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.Location = new System.Drawing.Point(11, 3);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1144, 593);
-            this.gridControl1.TabIndex = 0;
+            this.gridControl1.Size = new System.Drawing.Size(567, 565);
+            this.gridControl1.TabIndex = 14;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // tableKelimelerBindingSource
             // 
             this.tableKelimelerBindingSource.DataMember = "Table_Kelimeler";
-            this.tableKelimelerBindingSource.DataSource = this.İngilizceTurkceSozlukDataSet;
+            this.tableKelimelerBindingSource.DataSource = this.İngilizceTurkceSozlukDataSet3;
             // 
-            // İngilizceTurkceSozlukDataSet
+            // İngilizceTurkceSozlukDataSet3
             // 
-            this.İngilizceTurkceSozlukDataSet.DataSetName = "İngilizceTurkceSozlukDataSet";
-            this.İngilizceTurkceSozlukDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.İngilizceTurkceSozlukDataSet3.DataSetName = "İngilizceTurkceSozlukDataSet3";
+            this.İngilizceTurkceSozlukDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView1
             // 
@@ -738,11 +872,11 @@
             this.colKelimeTuru,
             this.colİngilizceKelime,
             this.colTurkceKarsılıgı,
-            this.colOrnekCumle,
-            this.colGirilmeTarihi});
+            this.colOrnekCumle});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // colKelimeID
             // 
@@ -779,12 +913,285 @@
             this.colOrnekCumle.Visible = true;
             this.colOrnekCumle.VisibleIndex = 4;
             // 
-            // colGirilmeTarihi
+            // btnIslemGuncelle
             // 
-            this.colGirilmeTarihi.FieldName = "GirilmeTarihi";
-            this.colGirilmeTarihi.Name = "colGirilmeTarihi";
-            this.colGirilmeTarihi.Visible = true;
-            this.colGirilmeTarihi.VisibleIndex = 5;
+            this.btnIslemGuncelle.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIslemGuncelle.Appearance.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIslemGuncelle.Appearance.Options.UseBackColor = true;
+            this.btnIslemGuncelle.Appearance.Options.UseFont = true;
+            this.btnIslemGuncelle.AppearanceHovered.BackColor = System.Drawing.Color.Tomato;
+            this.btnIslemGuncelle.AppearanceHovered.Options.UseBackColor = true;
+            this.btnIslemGuncelle.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.btnIslemGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnIslemGuncelle.ImageOptions.Image")));
+            this.btnIslemGuncelle.Location = new System.Drawing.Point(681, 435);
+            this.btnIslemGuncelle.Name = "btnIslemGuncelle";
+            this.btnIslemGuncelle.Size = new System.Drawing.Size(166, 70);
+            this.btnIslemGuncelle.TabIndex = 13;
+            this.btnIslemGuncelle.Text = "Güncelle";
+            this.btnIslemGuncelle.Click += new System.EventHandler(this.btnIslemGuncelle_Click);
+            // 
+            // btnIslemSil
+            // 
+            this.btnIslemSil.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIslemSil.Appearance.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIslemSil.Appearance.Options.UseBackColor = true;
+            this.btnIslemSil.Appearance.Options.UseFont = true;
+            this.btnIslemSil.AppearanceHovered.BackColor = System.Drawing.Color.Tomato;
+            this.btnIslemSil.AppearanceHovered.Options.UseBackColor = true;
+            this.btnIslemSil.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.btnIslemSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnIslemSil.ImageOptions.Image")));
+            this.btnIslemSil.Location = new System.Drawing.Point(892, 435);
+            this.btnIslemSil.Name = "btnIslemSil";
+            this.btnIslemSil.Size = new System.Drawing.Size(164, 70);
+            this.btnIslemSil.TabIndex = 12;
+            this.btnIslemSil.Text = "Sil";
+            this.btnIslemSil.Click += new System.EventHandler(this.btnIslemSil_Click);
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Controls.Add(this.txtIslemIng);
+            this.groupControl2.Controls.Add(this.txtIslemTurkce);
+            this.groupControl2.Controls.Add(this.txtIslemTur);
+            this.groupControl2.Controls.Add(this.txtIslemCumle);
+            this.groupControl2.Controls.Add(this.txtIslemId);
+            this.groupControl2.Controls.Add(this.labelControl6);
+            this.groupControl2.Controls.Add(this.labelControl5);
+            this.groupControl2.Controls.Add(this.labelControl4);
+            this.groupControl2.Controls.Add(this.labelControl3);
+            this.groupControl2.Controls.Add(this.labelControl1);
+            this.groupControl2.Location = new System.Drawing.Point(600, 27);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(517, 364);
+            this.groupControl2.TabIndex = 11;
+            this.groupControl2.Text = "KELİME BİLGİLERİ:";
+            // 
+            // txtIslemIng
+            // 
+            this.txtIslemIng.Location = new System.Drawing.Point(223, 96);
+            this.txtIslemIng.Name = "txtIslemIng";
+            this.txtIslemIng.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtIslemIng.Properties.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIslemIng.Properties.Appearance.Options.UseFont = true;
+            this.txtIslemIng.Properties.Appearance.Options.UseForeColor = true;
+            this.txtIslemIng.Size = new System.Drawing.Size(251, 30);
+            this.txtIslemIng.TabIndex = 20;
+            // 
+            // txtIslemTurkce
+            // 
+            this.txtIslemTurkce.Location = new System.Drawing.Point(223, 147);
+            this.txtIslemTurkce.Name = "txtIslemTurkce";
+            this.txtIslemTurkce.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtIslemTurkce.Properties.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIslemTurkce.Properties.Appearance.Options.UseFont = true;
+            this.txtIslemTurkce.Properties.Appearance.Options.UseForeColor = true;
+            this.txtIslemTurkce.Size = new System.Drawing.Size(251, 30);
+            this.txtIslemTurkce.TabIndex = 19;
+            // 
+            // txtIslemTur
+            // 
+            this.txtIslemTur.Location = new System.Drawing.Point(223, 203);
+            this.txtIslemTur.Name = "txtIslemTur";
+            this.txtIslemTur.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtIslemTur.Properties.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIslemTur.Properties.Appearance.Options.UseFont = true;
+            this.txtIslemTur.Properties.Appearance.Options.UseForeColor = true;
+            this.txtIslemTur.Size = new System.Drawing.Size(251, 30);
+            this.txtIslemTur.TabIndex = 18;
+            // 
+            // txtIslemCumle
+            // 
+            this.txtIslemCumle.Location = new System.Drawing.Point(42, 303);
+            this.txtIslemCumle.Name = "txtIslemCumle";
+            this.txtIslemCumle.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtIslemCumle.Properties.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIslemCumle.Properties.Appearance.Options.UseFont = true;
+            this.txtIslemCumle.Properties.Appearance.Options.UseForeColor = true;
+            this.txtIslemCumle.Size = new System.Drawing.Size(432, 26);
+            this.txtIslemCumle.TabIndex = 17;
+            // 
+            // txtIslemId
+            // 
+            this.txtIslemId.Location = new System.Drawing.Point(223, 38);
+            this.txtIslemId.Name = "txtIslemId";
+            this.txtIslemId.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtIslemId.Properties.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIslemId.Properties.Appearance.Options.UseFont = true;
+            this.txtIslemId.Properties.Appearance.Options.UseForeColor = true;
+            this.txtIslemId.Size = new System.Drawing.Size(251, 30);
+            this.txtIslemId.TabIndex = 16;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Appearance.Options.UseForeColor = true;
+            this.labelControl6.Location = new System.Drawing.Point(42, 97);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(163, 25);
+            this.labelControl6.TabIndex = 15;
+            this.labelControl6.Text = "İngilizce Kelime:";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(42, 148);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(169, 25);
+            this.labelControl5.TabIndex = 14;
+            this.labelControl5.Text = "Türkçe Karşılığı:";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseForeColor = true;
+            this.labelControl4.Location = new System.Drawing.Point(42, 258);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(143, 25);
+            this.labelControl4.TabIndex = 13;
+            this.labelControl4.Text = "Örnek Cümle:";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(42, 208);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(134, 25);
+            this.labelControl3.TabIndex = 12;
+            this.labelControl3.Text = "Kelime Türü:";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(42, 43);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(109, 25);
+            this.labelControl1.TabIndex = 11;
+            this.labelControl1.Text = "Kelime ID:";
+            // 
+            // kelimeDepo
+            // 
+            this.kelimeDepo.Appearance.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kelimeDepo.Appearance.Header.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kelimeDepo.Appearance.Header.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kelimeDepo.Appearance.Header.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kelimeDepo.Appearance.Header.ForeColor = System.Drawing.Color.White;
+            this.kelimeDepo.Appearance.Header.Options.UseBackColor = true;
+            this.kelimeDepo.Appearance.Header.Options.UseBorderColor = true;
+            this.kelimeDepo.Appearance.Header.Options.UseFont = true;
+            this.kelimeDepo.Appearance.Header.Options.UseForeColor = true;
+            this.kelimeDepo.Appearance.HeaderActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kelimeDepo.Appearance.HeaderActive.BackColor2 = System.Drawing.Color.DodgerBlue;
+            this.kelimeDepo.Appearance.HeaderActive.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.kelimeDepo.Appearance.HeaderActive.Options.UseBackColor = true;
+            this.kelimeDepo.Appearance.HeaderActive.Options.UseBorderColor = true;
+            this.kelimeDepo.Appearance.HeaderHotTracked.BackColor = System.Drawing.Color.DodgerBlue;
+            this.kelimeDepo.Appearance.HeaderHotTracked.BackColor2 = System.Drawing.Color.DodgerBlue;
+            this.kelimeDepo.Appearance.HeaderHotTracked.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.kelimeDepo.Appearance.HeaderHotTracked.Options.UseBackColor = true;
+            this.kelimeDepo.Appearance.HeaderHotTracked.Options.UseBorderColor = true;
+            this.kelimeDepo.Controls.Add(this.gridControl2);
+            this.kelimeDepo.Image = ((System.Drawing.Image)(resources.GetObject("kelimeDepo.Image")));
+            this.kelimeDepo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.kelimeDepo.Name = "kelimeDepo";
+            this.kelimeDepo.Size = new System.Drawing.Size(1144, 593);
+            this.kelimeDepo.Text = "Kelime Deposu";
+            // 
+            // gridControl2
+            // 
+            this.gridControl2.DataSource = this.tableKelimelerBindingSource1;
+            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl2.Location = new System.Drawing.Point(0, 0);
+            this.gridControl2.MainView = this.gridView2;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(1144, 593);
+            this.gridControl2.TabIndex = 0;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
+            // 
+            // tableKelimelerBindingSource1
+            // 
+            this.tableKelimelerBindingSource1.DataMember = "Table_Kelimeler";
+            this.tableKelimelerBindingSource1.DataSource = this.İngilizceTurkceSozlukDataSet4;
+            // 
+            // İngilizceTurkceSozlukDataSet4
+            // 
+            this.İngilizceTurkceSozlukDataSet4.DataSetName = "İngilizceTurkceSozlukDataSet4";
+            this.İngilizceTurkceSozlukDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gridView2
+            // 
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colKelimeID1,
+            this.colKelimeTuru1,
+            this.colİngilizceKelime1,
+            this.colTurkceKarsılıgı1,
+            this.colOrnekCumle1,
+            this.colSeviye,
+            this.colTarih});
+            this.gridView2.GridControl = this.gridControl2;
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsView.ShowGroupPanel = false;
+            // 
+            // colKelimeID1
+            // 
+            this.colKelimeID1.FieldName = "KelimeID";
+            this.colKelimeID1.Name = "colKelimeID1";
+            this.colKelimeID1.Visible = true;
+            this.colKelimeID1.VisibleIndex = 0;
+            // 
+            // colKelimeTuru1
+            // 
+            this.colKelimeTuru1.FieldName = "KelimeTuru";
+            this.colKelimeTuru1.Name = "colKelimeTuru1";
+            this.colKelimeTuru1.Visible = true;
+            this.colKelimeTuru1.VisibleIndex = 1;
+            // 
+            // colİngilizceKelime1
+            // 
+            this.colİngilizceKelime1.FieldName = "İngilizceKelime";
+            this.colİngilizceKelime1.Name = "colİngilizceKelime1";
+            this.colİngilizceKelime1.Visible = true;
+            this.colİngilizceKelime1.VisibleIndex = 2;
+            // 
+            // colTurkceKarsılıgı1
+            // 
+            this.colTurkceKarsılıgı1.FieldName = "TurkceKarsılıgı";
+            this.colTurkceKarsılıgı1.Name = "colTurkceKarsılıgı1";
+            this.colTurkceKarsılıgı1.Visible = true;
+            this.colTurkceKarsılıgı1.VisibleIndex = 3;
+            // 
+            // colOrnekCumle1
+            // 
+            this.colOrnekCumle1.FieldName = "OrnekCumle";
+            this.colOrnekCumle1.Name = "colOrnekCumle1";
+            this.colOrnekCumle1.Visible = true;
+            this.colOrnekCumle1.VisibleIndex = 4;
+            // 
+            // colSeviye
+            // 
+            this.colSeviye.FieldName = "Seviye";
+            this.colSeviye.Name = "colSeviye";
+            this.colSeviye.Visible = true;
+            this.colSeviye.VisibleIndex = 5;
+            // 
+            // colTarih
+            // 
+            this.colTarih.FieldName = "Tarih";
+            this.colTarih.Name = "colTarih";
+            this.colTarih.Visible = true;
+            this.colTarih.VisibleIndex = 6;
             // 
             // dashboardDesigner1
             // 
@@ -798,6 +1205,15 @@
             // table_KelimelerTableAdapter
             // 
             this.table_KelimelerTableAdapter.ClearBeforeFill = true;
+            // 
+            // table_KelimelerTableAdapter1
+            // 
+            this.table_KelimelerTableAdapter1.ClearBeforeFill = true;
+            // 
+            // ingilizceTurkceSozlukDataSet1
+            // 
+            this.ingilizceTurkceSozlukDataSet1.DataSetName = "İngilizceTurkceSozlukDataSet";
+            this.ingilizceTurkceSozlukDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Form1
             // 
@@ -813,15 +1229,21 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "İngilizce-Türkçe Sözlük";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.kelimeEzber.ResumeLayout(false);
-            this.kelimeEzber.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.kelimeTest.ResumeLayout(false);
+            this.kelimeTest.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtYanlis.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDogru.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEditYanlis.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEditDogru.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTestCevap.Properties)).EndInit();
+            this.kelimeEzber.ResumeLayout(false);
+            this.kelimeEzber.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.kelimeEkle.ResumeLayout(false);
             this.kelimeEkle.PerformLayout();
@@ -832,11 +1254,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sozlukPencere)).EndInit();
             this.sozlukPencere.ResumeLayout(false);
-            this.kelimeDepo.ResumeLayout(false);
+            this.kelimeIslem.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableKelimelerBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIslemIng.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIslemTurkce.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIslemTur.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIslemCumle.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIslemId.Properties)).EndInit();
+            this.kelimeDepo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableKelimelerBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingilizceTurkceSozlukDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -863,37 +1299,73 @@
         private DevExpress.XtraEditors.SimpleButton smpBtnEkle;
         private DevExpress.XtraEditors.LabelControl lblCtrlBaslik;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private DevExpress.XtraEditors.LabelControl lblCtrlIngilizce;
-        private DevExpress.XtraEditors.LabelControl lblCtrlSoru;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.LabelControl lblCtrlCumle;
         private DevExpress.XtraEditors.LabelControl lblCtrlTür;
-        private DevExpress.XtraEditors.TextEdit txtEditYanlis;
-        private DevExpress.XtraEditors.TextEdit txtEditDogru;
-        private DevExpress.XtraEditors.LabelControl lblCtrlYanlis;
-        private DevExpress.XtraEditors.LabelControl lblCtrlDogru;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private DevExpress.XtraEditors.LabelControl lblCtrlIstatistik;
+        private DevExpress.XtraEditors.LabelControl lblCtrlIngilizce;
+        private DevExpress.XtraTab.XtraTabPage kelimeIslem;
+        private DevExpress.XtraEditors.SimpleButton btnIslemSil;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.TextEdit txtIslemIng;
+        private DevExpress.XtraEditors.TextEdit txtIslemTurkce;
+        private DevExpress.XtraEditors.TextEdit txtIslemTur;
+        private DevExpress.XtraEditors.TextEdit txtIslemCumle;
+        private DevExpress.XtraEditors.TextEdit txtIslemId;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.SimpleButton btnIslemGuncelle;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.SimpleButton smpBtnTamam;
-        private İngilizceTurkceSozlukDataSet İngilizceTurkceSozlukDataSet;
+        private İngilizceTurkceSozlukDataSet3 İngilizceTurkceSozlukDataSet3;
         private System.Windows.Forms.BindingSource tableKelimelerBindingSource;
-        private İngilizceTurkceSozlukDataSetTableAdapters.Table_KelimelerTableAdapter table_KelimelerTableAdapter;
+        private İngilizceTurkceSozlukDataSet3TableAdapters.Table_KelimelerTableAdapter table_KelimelerTableAdapter;
         private DevExpress.XtraGrid.Columns.GridColumn colKelimeID;
         private DevExpress.XtraGrid.Columns.GridColumn colKelimeTuru;
         private DevExpress.XtraGrid.Columns.GridColumn colİngilizceKelime;
         private DevExpress.XtraGrid.Columns.GridColumn colTurkceKarsılıgı;
         private DevExpress.XtraGrid.Columns.GridColumn colOrnekCumle;
-        private DevExpress.XtraGrid.Columns.GridColumn colGirilmeTarihi;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private İngilizceTurkceSozlukDataSet4 İngilizceTurkceSozlukDataSet4;
+        private System.Windows.Forms.BindingSource tableKelimelerBindingSource1;
+        private İngilizceTurkceSozlukDataSet4TableAdapters.Table_KelimelerTableAdapter table_KelimelerTableAdapter1;
+        private DevExpress.XtraGrid.Columns.GridColumn colKelimeID1;
+        private DevExpress.XtraGrid.Columns.GridColumn colKelimeTuru1;
+        private DevExpress.XtraGrid.Columns.GridColumn colİngilizceKelime1;
+        private DevExpress.XtraGrid.Columns.GridColumn colTurkceKarsılıgı1;
+        private DevExpress.XtraGrid.Columns.GridColumn colOrnekCumle1;
+        private DevExpress.XtraGrid.Columns.GridColumn colSeviye;
+        private DevExpress.XtraGrid.Columns.GridColumn colTarih;
+        private İngilizceTurkceSozlukDataSet ingilizceTurkceSozlukDataSet1;
+        private DevExpress.XtraEditors.SimpleButton smpBtnIlerle;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.LabelControl lblCtrlTurkce;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.RadioButton rdBtnD;
-        private System.Windows.Forms.RadioButton rdBtnC;
-        private System.Windows.Forms.RadioButton rdBtnB;
-        private System.Windows.Forms.RadioButton rdBtnA;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.LabelControl lblTestCumle;
+        private DevExpress.XtraEditors.LabelControl lblTestTur;
+        private DevExpress.XtraEditors.LabelControl lblTestIng;
+        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.TextEdit txtYanlis;
+        private DevExpress.XtraEditors.TextEdit txtDogru;
+        private DevExpress.XtraEditors.LabelControl labelControl22;
+        private DevExpress.XtraEditors.LabelControl labelControl21;
+        private DevExpress.XtraEditors.LabelControl labelControl20;
+        private DevExpress.XtraEditors.LabelControl labelControl19;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private DevExpress.XtraEditors.SimpleButton btnTestTamam;
+        private DevExpress.XtraEditors.SimpleButton btnTestIlerle;
+        private DevExpress.XtraEditors.TextEdit txtTestCevap;
+        private DevExpress.XtraEditors.LabelControl labelControl18;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
     }
 }
 
