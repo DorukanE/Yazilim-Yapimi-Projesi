@@ -101,6 +101,14 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.kelimeOgrenilenler = new DevExpress.XtraTab.XtraTabPage();
+            this.btnIstatistik = new DevExpress.XtraEditors.SimpleButton();
+            this.gridGunlukOgrenilenler = new DevExpress.XtraGrid.GridControl();
+            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridAylikOgrenilenler = new DevExpress.XtraGrid.GridControl();
+            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridOgrenilenler = new DevExpress.XtraGrid.GridControl();
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.kelimeDepo = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.tableKelimelerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -113,17 +121,10 @@
             this.colOrnekCumle1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSeviye = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTarih = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.kelimeOgrenilenler = new DevExpress.XtraTab.XtraTabPage();
             this.dashboardDesigner1 = new DevExpress.DashboardWin.DashboardDesigner();
             this.table_KelimelerTableAdapter = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet3TableAdapters.Table_KelimelerTableAdapter();
             this.table_KelimelerTableAdapter1 = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet4TableAdapters.Table_KelimelerTableAdapter();
             this.ingilizceTurkceSozlukDataSet1 = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet();
-            this.gridOgrenilenler = new DevExpress.XtraGrid.GridControl();
-            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridAylikOgrenilenler = new DevExpress.XtraGrid.GridControl();
-            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridGunlukOgrenilenler = new DevExpress.XtraGrid.GridControl();
-            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.kelimeTest.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtYanlis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDogru.Properties)).BeginInit();
@@ -156,19 +157,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtIslemTur.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIslemCumle.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIslemId.Properties)).BeginInit();
+            this.kelimeOgrenilenler.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridGunlukOgrenilenler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridAylikOgrenilenler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridOgrenilenler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             this.kelimeDepo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableKelimelerBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            this.kelimeOgrenilenler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ingilizceTurkceSozlukDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridOgrenilenler)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridAylikOgrenilenler)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridGunlukOgrenilenler)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
@@ -214,7 +215,7 @@
             this.kelimeTest.Image = ((System.Drawing.Image)(resources.GetObject("kelimeTest.Image")));
             this.kelimeTest.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kelimeTest.Name = "kelimeTest";
-            this.kelimeTest.Size = new System.Drawing.Size(1210, 581);
+            this.kelimeTest.Size = new System.Drawing.Size(1248, 635);
             this.kelimeTest.Text = "Test";
             // 
             // txtYanlis
@@ -464,7 +465,7 @@
             this.kelimeEzber.Image = ((System.Drawing.Image)(resources.GetObject("kelimeEzber.Image")));
             this.kelimeEzber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kelimeEzber.Name = "kelimeEzber";
-            this.kelimeEzber.Size = new System.Drawing.Size(1210, 581);
+            this.kelimeEzber.Size = new System.Drawing.Size(1248, 635);
             this.kelimeEzber.Text = "Kelime Ezberleme";
             // 
             // groupControl1
@@ -667,7 +668,7 @@
             this.kelimeEkle.Image = ((System.Drawing.Image)(resources.GetObject("kelimeEkle.Image")));
             this.kelimeEkle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kelimeEkle.Name = "kelimeEkle";
-            this.kelimeEkle.Size = new System.Drawing.Size(1210, 581);
+            this.kelimeEkle.Size = new System.Drawing.Size(1248, 635);
             this.kelimeEkle.Text = "Kelime Ekleme";
             // 
             // smpBtnEkle
@@ -819,7 +820,7 @@
             this.sozlukPencere.MultiLine = DevExpress.Utils.DefaultBoolean.True;
             this.sozlukPencere.Name = "sozlukPencere";
             this.sozlukPencere.SelectedTabPage = this.kelimeEkle;
-            this.sozlukPencere.Size = new System.Drawing.Size(1212, 673);
+            this.sozlukPencere.Size = new System.Drawing.Size(1250, 727);
             this.sozlukPencere.TabIndex = 0;
             this.sozlukPencere.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.kelimeEkle,
@@ -856,7 +857,7 @@
             this.kelimeIslem.Controls.Add(this.groupControl2);
             this.kelimeIslem.Image = ((System.Drawing.Image)(resources.GetObject("kelimeIslem.Image")));
             this.kelimeIslem.Name = "kelimeIslem";
-            this.kelimeIslem.Size = new System.Drawing.Size(1210, 581);
+            this.kelimeIslem.Size = new System.Drawing.Size(1248, 635);
             this.kelimeIslem.Text = "Kelime İşlemleri";
             // 
             // gridControl1
@@ -1095,6 +1096,89 @@
             this.labelControl1.TabIndex = 11;
             this.labelControl1.Text = "Kelime ID:";
             // 
+            // kelimeOgrenilenler
+            // 
+            this.kelimeOgrenilenler.Appearance.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kelimeOgrenilenler.Appearance.Header.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kelimeOgrenilenler.Appearance.Header.ForeColor = System.Drawing.Color.White;
+            this.kelimeOgrenilenler.Appearance.Header.Options.UseBackColor = true;
+            this.kelimeOgrenilenler.Appearance.Header.Options.UseFont = true;
+            this.kelimeOgrenilenler.Appearance.Header.Options.UseForeColor = true;
+            this.kelimeOgrenilenler.Controls.Add(this.btnIstatistik);
+            this.kelimeOgrenilenler.Controls.Add(this.gridGunlukOgrenilenler);
+            this.kelimeOgrenilenler.Controls.Add(this.gridAylikOgrenilenler);
+            this.kelimeOgrenilenler.Controls.Add(this.gridOgrenilenler);
+            this.kelimeOgrenilenler.Image = ((System.Drawing.Image)(resources.GetObject("kelimeOgrenilenler.Image")));
+            this.kelimeOgrenilenler.Name = "kelimeOgrenilenler";
+            this.kelimeOgrenilenler.Size = new System.Drawing.Size(1248, 635);
+            this.kelimeOgrenilenler.Text = "Öğrenilenler";
+            // 
+            // btnIstatistik
+            // 
+            this.btnIstatistik.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIstatistik.Appearance.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIstatistik.Appearance.Options.UseBackColor = true;
+            this.btnIstatistik.Appearance.Options.UseFont = true;
+            this.btnIstatistik.AppearanceHovered.BackColor = System.Drawing.Color.Tomato;
+            this.btnIstatistik.AppearanceHovered.Options.UseBackColor = true;
+            this.btnIstatistik.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.btnIstatistik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnIstatistik.ImageOptions.Image")));
+            this.btnIstatistik.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnIstatistik.Location = new System.Drawing.Point(34, 561);
+            this.btnIstatistik.Name = "btnIstatistik";
+            this.btnIstatistik.Size = new System.Drawing.Size(1148, 49);
+            this.btnIstatistik.TabIndex = 3;
+            this.btnIstatistik.Text = "İstatistik Göster";
+            this.btnIstatistik.Click += new System.EventHandler(this.btnIstatistik_Click);
+            // 
+            // gridGunlukOgrenilenler
+            // 
+            this.gridGunlukOgrenilenler.Location = new System.Drawing.Point(34, 388);
+            this.gridGunlukOgrenilenler.MainView = this.gridView5;
+            this.gridGunlukOgrenilenler.Name = "gridGunlukOgrenilenler";
+            this.gridGunlukOgrenilenler.Size = new System.Drawing.Size(1148, 153);
+            this.gridGunlukOgrenilenler.TabIndex = 2;
+            this.gridGunlukOgrenilenler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView5});
+            // 
+            // gridView5
+            // 
+            this.gridView5.GridControl = this.gridGunlukOgrenilenler;
+            this.gridView5.Name = "gridView5";
+            this.gridView5.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridAylikOgrenilenler
+            // 
+            this.gridAylikOgrenilenler.Location = new System.Drawing.Point(34, 193);
+            this.gridAylikOgrenilenler.MainView = this.gridView4;
+            this.gridAylikOgrenilenler.Name = "gridAylikOgrenilenler";
+            this.gridAylikOgrenilenler.Size = new System.Drawing.Size(1148, 161);
+            this.gridAylikOgrenilenler.TabIndex = 1;
+            this.gridAylikOgrenilenler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView4});
+            // 
+            // gridView4
+            // 
+            this.gridView4.GridControl = this.gridAylikOgrenilenler;
+            this.gridView4.Name = "gridView4";
+            this.gridView4.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridOgrenilenler
+            // 
+            this.gridOgrenilenler.Location = new System.Drawing.Point(34, 20);
+            this.gridOgrenilenler.MainView = this.gridView3;
+            this.gridOgrenilenler.Name = "gridOgrenilenler";
+            this.gridOgrenilenler.Size = new System.Drawing.Size(1148, 141);
+            this.gridOgrenilenler.TabIndex = 0;
+            this.gridOgrenilenler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView3});
+            // 
+            // gridView3
+            // 
+            this.gridView3.GridControl = this.gridOgrenilenler;
+            this.gridView3.Name = "gridView3";
+            this.gridView3.OptionsView.ShowGroupPanel = false;
+            // 
             // kelimeDepo
             // 
             this.kelimeDepo.Appearance.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1120,7 +1204,7 @@
             this.kelimeDepo.Image = ((System.Drawing.Image)(resources.GetObject("kelimeDepo.Image")));
             this.kelimeDepo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kelimeDepo.Name = "kelimeDepo";
-            this.kelimeDepo.Size = new System.Drawing.Size(1210, 581);
+            this.kelimeDepo.Size = new System.Drawing.Size(1248, 635);
             this.kelimeDepo.Text = "Kelime Deposu";
             // 
             // gridControl2
@@ -1130,7 +1214,7 @@
             this.gridControl2.Location = new System.Drawing.Point(0, 0);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(1210, 581);
+            this.gridControl2.Size = new System.Drawing.Size(1248, 635);
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -1208,24 +1292,10 @@
             this.colTarih.Visible = true;
             this.colTarih.VisibleIndex = 6;
             // 
-            // kelimeOgrenilenler
-            // 
-            this.kelimeOgrenilenler.Appearance.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kelimeOgrenilenler.Appearance.Header.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kelimeOgrenilenler.Appearance.Header.ForeColor = System.Drawing.Color.White;
-            this.kelimeOgrenilenler.Appearance.Header.Options.UseBackColor = true;
-            this.kelimeOgrenilenler.Appearance.Header.Options.UseFont = true;
-            this.kelimeOgrenilenler.Appearance.Header.Options.UseForeColor = true;
-            this.kelimeOgrenilenler.Controls.Add(this.gridGunlukOgrenilenler);
-            this.kelimeOgrenilenler.Controls.Add(this.gridAylikOgrenilenler);
-            this.kelimeOgrenilenler.Controls.Add(this.gridOgrenilenler);
-            this.kelimeOgrenilenler.Image = ((System.Drawing.Image)(resources.GetObject("kelimeOgrenilenler.Image")));
-            this.kelimeOgrenilenler.Name = "kelimeOgrenilenler";
-            this.kelimeOgrenilenler.Size = new System.Drawing.Size(1210, 581);
-            this.kelimeOgrenilenler.Text = "Öğrenilenler";
-            // 
             // dashboardDesigner1
             // 
+            this.dashboardDesigner1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.dashboardDesigner1.Appearance.Options.UseBackColor = true;
             this.dashboardDesigner1.CustomDBSchemaProviderEx = null;
             this.dashboardDesigner1.Location = new System.Drawing.Point(0, 0);
             this.dashboardDesigner1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -1246,60 +1316,12 @@
             this.ingilizceTurkceSozlukDataSet1.DataSetName = "İngilizceTurkceSozlukDataSet";
             this.ingilizceTurkceSozlukDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // gridOgrenilenler
-            // 
-            this.gridOgrenilenler.Location = new System.Drawing.Point(34, 20);
-            this.gridOgrenilenler.MainView = this.gridView3;
-            this.gridOgrenilenler.Name = "gridOgrenilenler";
-            this.gridOgrenilenler.Size = new System.Drawing.Size(1148, 153);
-            this.gridOgrenilenler.TabIndex = 0;
-            this.gridOgrenilenler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView3});
-            // 
-            // gridView3
-            // 
-            this.gridView3.GridControl = this.gridOgrenilenler;
-            this.gridView3.Name = "gridView3";
-            this.gridView3.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridAylikOgrenilenler
-            // 
-            this.gridAylikOgrenilenler.Location = new System.Drawing.Point(34, 193);
-            this.gridAylikOgrenilenler.MainView = this.gridView4;
-            this.gridAylikOgrenilenler.Name = "gridAylikOgrenilenler";
-            this.gridAylikOgrenilenler.Size = new System.Drawing.Size(1148, 171);
-            this.gridAylikOgrenilenler.TabIndex = 1;
-            this.gridAylikOgrenilenler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView4});
-            // 
-            // gridView4
-            // 
-            this.gridView4.GridControl = this.gridAylikOgrenilenler;
-            this.gridView4.Name = "gridView4";
-            this.gridView4.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridGunlukOgrenilenler
-            // 
-            this.gridGunlukOgrenilenler.Location = new System.Drawing.Point(34, 388);
-            this.gridGunlukOgrenilenler.MainView = this.gridView5;
-            this.gridGunlukOgrenilenler.Name = "gridGunlukOgrenilenler";
-            this.gridGunlukOgrenilenler.Size = new System.Drawing.Size(1148, 182);
-            this.gridGunlukOgrenilenler.TabIndex = 2;
-            this.gridGunlukOgrenilenler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView5});
-            // 
-            // gridView5
-            // 
-            this.gridView5.GridControl = this.gridGunlukOgrenilenler;
-            this.gridView5.Name = "gridView5";
-            this.gridView5.OptionsView.ShowGroupPanel = false;
-            // 
             // Form1
             // 
             this.AcceptButton = this.smpBtnEkle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1212, 673);
+            this.ClientSize = new System.Drawing.Size(1250, 727);
             this.Controls.Add(this.sozlukPencere);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1346,19 +1368,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtIslemTur.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIslemCumle.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIslemId.Properties)).EndInit();
+            this.kelimeOgrenilenler.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridGunlukOgrenilenler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridAylikOgrenilenler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridOgrenilenler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             this.kelimeDepo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableKelimelerBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            this.kelimeOgrenilenler.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ingilizceTurkceSozlukDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridOgrenilenler)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridAylikOgrenilenler)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridGunlukOgrenilenler)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1459,6 +1481,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
         private DevExpress.XtraGrid.GridControl gridGunlukOgrenilenler;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
+        private DevExpress.XtraEditors.SimpleButton btnIstatistik;
     }
 }
 

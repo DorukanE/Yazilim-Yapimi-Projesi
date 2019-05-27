@@ -90,14 +90,12 @@ namespace Yazılım_Yapımı_Projesi
 
         private void smpBtnEkle_Click(object sender, EventArgs e)
         {
-            string currentDate = DateTime.Now.Year + "." + DateTime.Now.Month + "." + DateTime.Now.Day;
-
             Kelime kelime = new Kelime();
             kelime.ingKelime = txtEditIngilizce.Text;
             kelime.turkceKelime = txtEditTurkce.Text;
             kelime.kelimeTuru = cmbBoxEditTur.Text;
             kelime.ornekCumle = txtEditCumle.Text;
-            kelime.tarih = currentDate;
+            kelime.tarih = DateTime.Now.ToShortDateString();
             kelime.seviye = 0.ToString();
 
             VeritabaniIslemleri islem = new VeritabaniIslemleri();
@@ -248,6 +246,12 @@ namespace Yazılım_Yapımı_Projesi
         {
             e.Handled = !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)
                      && !char.IsSeparator(e.KeyChar);
+        }
+
+        private void btnIstatistik_Click(object sender, EventArgs e)
+        {
+            FormIstatistik frmIstatistik = new FormIstatistik();            
+            frmIstatistik.Show();
         }
 
         private void txtEditCumle_KeyPress(object sender, KeyPressEventArgs e)
