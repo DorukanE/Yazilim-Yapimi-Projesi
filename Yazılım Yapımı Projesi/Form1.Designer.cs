@@ -113,10 +113,17 @@
             this.colOrnekCumle1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSeviye = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTarih = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.kelimeOgrenilenler = new DevExpress.XtraTab.XtraTabPage();
             this.dashboardDesigner1 = new DevExpress.DashboardWin.DashboardDesigner();
             this.table_KelimelerTableAdapter = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet3TableAdapters.Table_KelimelerTableAdapter();
             this.table_KelimelerTableAdapter1 = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet4TableAdapters.Table_KelimelerTableAdapter();
             this.ingilizceTurkceSozlukDataSet1 = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet();
+            this.gridOgrenilenler = new DevExpress.XtraGrid.GridControl();
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridAylikOgrenilenler = new DevExpress.XtraGrid.GridControl();
+            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridGunlukOgrenilenler = new DevExpress.XtraGrid.GridControl();
+            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.kelimeTest.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtYanlis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDogru.Properties)).BeginInit();
@@ -154,7 +161,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableKelimelerBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            this.kelimeOgrenilenler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ingilizceTurkceSozlukDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridOgrenilenler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridAylikOgrenilenler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridGunlukOgrenilenler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
@@ -200,12 +214,12 @@
             this.kelimeTest.Image = ((System.Drawing.Image)(resources.GetObject("kelimeTest.Image")));
             this.kelimeTest.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kelimeTest.Name = "kelimeTest";
-            this.kelimeTest.Size = new System.Drawing.Size(1144, 593);
+            this.kelimeTest.Size = new System.Drawing.Size(1210, 581);
             this.kelimeTest.Text = "Test";
             // 
             // txtYanlis
             // 
-            this.txtYanlis.Location = new System.Drawing.Point(1004, 387);
+            this.txtYanlis.Location = new System.Drawing.Point(1025, 387);
             this.txtYanlis.Name = "txtYanlis";
             this.txtYanlis.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtYanlis.Properties.Appearance.Options.UseFont = true;
@@ -214,7 +228,7 @@
             // 
             // txtDogru
             // 
-            this.txtDogru.Location = new System.Drawing.Point(1004, 339);
+            this.txtDogru.Location = new System.Drawing.Point(1025, 339);
             this.txtDogru.Name = "txtDogru";
             this.txtDogru.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtDogru.Properties.Appearance.Options.UseFont = true;
@@ -225,7 +239,7 @@
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl22.Appearance.Options.UseFont = true;
-            this.labelControl22.Location = new System.Drawing.Point(870, 390);
+            this.labelControl22.Location = new System.Drawing.Point(891, 390);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(114, 21);
             this.labelControl22.TabIndex = 7;
@@ -235,7 +249,7 @@
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.Location = new System.Drawing.Point(870, 342);
+            this.labelControl21.Location = new System.Drawing.Point(891, 342);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(116, 21);
             this.labelControl21.TabIndex = 6;
@@ -245,7 +259,7 @@
             // 
             this.labelControl20.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("labelControl20.Appearance.Image")));
             this.labelControl20.Appearance.Options.UseImage = true;
-            this.labelControl20.Location = new System.Drawing.Point(974, 283);
+            this.labelControl20.Location = new System.Drawing.Point(995, 283);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(32, 32);
             this.labelControl20.TabIndex = 5;
@@ -254,7 +268,7 @@
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.Location = new System.Drawing.Point(963, 225);
+            this.labelControl19.Location = new System.Drawing.Point(984, 225);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(96, 34);
             this.labelControl19.TabIndex = 4;
@@ -263,7 +277,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(897, 225);
+            this.pictureBox5.Location = new System.Drawing.Point(918, 225);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 37);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -273,7 +287,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(137, 35);
+            this.pictureBox4.Location = new System.Drawing.Point(137, 29);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(72, 72);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -286,7 +300,7 @@
             this.labelControl11.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.labelControl11.Appearance.Options.UseFont = true;
             this.labelControl11.Appearance.Options.UseForeColor = true;
-            this.labelControl11.Location = new System.Drawing.Point(230, 39);
+            this.labelControl11.Location = new System.Drawing.Point(230, 33);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(535, 68);
             this.labelControl11.TabIndex = 1;
@@ -304,7 +318,7 @@
             this.groupControl3.Controls.Add(this.labelControl14);
             this.groupControl3.Controls.Add(this.labelControl13);
             this.groupControl3.Controls.Add(this.labelControl12);
-            this.groupControl3.Location = new System.Drawing.Point(57, 124);
+            this.groupControl3.Location = new System.Drawing.Point(57, 118);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(777, 443);
             this.groupControl3.TabIndex = 0;
@@ -319,7 +333,7 @@
             this.btnTestTamam.AppearanceHovered.BackColor = System.Drawing.Color.Tomato;
             this.btnTestTamam.AppearanceHovered.Options.UseBackColor = true;
             this.btnTestTamam.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.btnTestTamam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.btnTestTamam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTestTamam.ImageOptions.Image")));
             this.btnTestTamam.Location = new System.Drawing.Point(273, 332);
             this.btnTestTamam.Name = "btnTestTamam";
             this.btnTestTamam.Size = new System.Drawing.Size(160, 45);
@@ -450,7 +464,7 @@
             this.kelimeEzber.Image = ((System.Drawing.Image)(resources.GetObject("kelimeEzber.Image")));
             this.kelimeEzber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kelimeEzber.Name = "kelimeEzber";
-            this.kelimeEzber.Size = new System.Drawing.Size(1144, 593);
+            this.kelimeEzber.Size = new System.Drawing.Size(1210, 581);
             this.kelimeEzber.Text = "Kelime Ezberleme";
             // 
             // groupControl1
@@ -466,7 +480,7 @@
             this.groupControl1.Controls.Add(this.lblCtrlCumle);
             this.groupControl1.Controls.Add(this.lblCtrlTür);
             this.groupControl1.Controls.Add(this.lblCtrlIngilizce);
-            this.groupControl1.Location = new System.Drawing.Point(176, 106);
+            this.groupControl1.Location = new System.Drawing.Point(193, 106);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(800, 453);
             this.groupControl1.TabIndex = 19;
@@ -581,7 +595,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(271, 27);
+            this.pictureBox2.Location = new System.Drawing.Point(288, 27);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(72, 72);
@@ -597,7 +611,7 @@
             this.lblCtrlBaslik.Appearance.Options.UseBackColor = true;
             this.lblCtrlBaslik.Appearance.Options.UseFont = true;
             this.lblCtrlBaslik.Appearance.Options.UseForeColor = true;
-            this.lblCtrlBaslik.Location = new System.Drawing.Point(360, 31);
+            this.lblCtrlBaslik.Location = new System.Drawing.Point(377, 31);
             this.lblCtrlBaslik.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblCtrlBaslik.Name = "lblCtrlBaslik";
             this.lblCtrlBaslik.Size = new System.Drawing.Size(548, 68);
@@ -610,7 +624,7 @@
             this.lblCumle.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblCumle.Appearance.Options.UseFont = true;
             this.lblCumle.Appearance.Options.UseForeColor = true;
-            this.lblCumle.Location = new System.Drawing.Point(219, 356);
+            this.lblCumle.Location = new System.Drawing.Point(280, 356);
             this.lblCumle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblCumle.Name = "lblCumle";
             this.lblCumle.Size = new System.Drawing.Size(74, 29);
@@ -653,7 +667,7 @@
             this.kelimeEkle.Image = ((System.Drawing.Image)(resources.GetObject("kelimeEkle.Image")));
             this.kelimeEkle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kelimeEkle.Name = "kelimeEkle";
-            this.kelimeEkle.Size = new System.Drawing.Size(1144, 593);
+            this.kelimeEkle.Size = new System.Drawing.Size(1210, 581);
             this.kelimeEkle.Text = "Kelime Ekleme";
             // 
             // smpBtnEkle
@@ -666,7 +680,7 @@
             this.smpBtnEkle.AppearanceHovered.Options.UseBackColor = true;
             this.smpBtnEkle.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.smpBtnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("smpBtnEkle.ImageOptions.Image")));
-            this.smpBtnEkle.Location = new System.Drawing.Point(490, 448);
+            this.smpBtnEkle.Location = new System.Drawing.Point(551, 448);
             this.smpBtnEkle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.smpBtnEkle.Name = "smpBtnEkle";
             this.smpBtnEkle.Size = new System.Drawing.Size(201, 47);
@@ -676,7 +690,7 @@
             // 
             // cmbBoxEditTur
             // 
-            this.cmbBoxEditTur.Location = new System.Drawing.Point(748, 250);
+            this.cmbBoxEditTur.Location = new System.Drawing.Point(809, 250);
             this.cmbBoxEditTur.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbBoxEditTur.Name = "cmbBoxEditTur";
             this.cmbBoxEditTur.Properties.Appearance.BackColor = System.Drawing.Color.Gray;
@@ -704,7 +718,7 @@
             // 
             this.lblTur.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTur.Appearance.Options.UseFont = true;
-            this.lblTur.Location = new System.Drawing.Point(572, 250);
+            this.lblTur.Location = new System.Drawing.Point(633, 250);
             this.lblTur.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblTur.Name = "lblTur";
             this.lblTur.Size = new System.Drawing.Size(178, 29);
@@ -713,7 +727,7 @@
             // 
             // txtEditCumle
             // 
-            this.txtEditCumle.Location = new System.Drawing.Point(299, 359);
+            this.txtEditCumle.Location = new System.Drawing.Point(360, 359);
             this.txtEditCumle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEditCumle.Name = "txtEditCumle";
             this.txtEditCumle.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -728,7 +742,7 @@
             // 
             // txtEditTurkce
             // 
-            this.txtEditTurkce.Location = new System.Drawing.Point(299, 300);
+            this.txtEditTurkce.Location = new System.Drawing.Point(360, 300);
             this.txtEditTurkce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEditTurkce.Name = "txtEditTurkce";
             this.txtEditTurkce.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -745,7 +759,7 @@
             // 
             this.lblTurkce.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTurkce.Appearance.Options.UseFont = true;
-            this.lblTurkce.Location = new System.Drawing.Point(119, 304);
+            this.lblTurkce.Location = new System.Drawing.Point(180, 304);
             this.lblTurkce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblTurkce.Name = "lblTurkce";
             this.lblTurkce.Size = new System.Drawing.Size(181, 29);
@@ -755,7 +769,7 @@
             // txtEditIngilizce
             // 
             this.txtEditIngilizce.EditValue = "";
-            this.txtEditIngilizce.Location = new System.Drawing.Point(299, 250);
+            this.txtEditIngilizce.Location = new System.Drawing.Point(360, 250);
             this.txtEditIngilizce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEditIngilizce.Name = "txtEditIngilizce";
             this.txtEditIngilizce.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -772,7 +786,7 @@
             // 
             this.lblIngilizce.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblIngilizce.Appearance.Options.UseFont = true;
-            this.lblIngilizce.Location = new System.Drawing.Point(119, 252);
+            this.lblIngilizce.Location = new System.Drawing.Point(180, 252);
             this.lblIngilizce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblIngilizce.Name = "lblIngilizce";
             this.lblIngilizce.Size = new System.Drawing.Size(182, 29);
@@ -782,7 +796,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(499, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(560, 43);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(182, 127);
@@ -805,13 +819,14 @@
             this.sozlukPencere.MultiLine = DevExpress.Utils.DefaultBoolean.True;
             this.sozlukPencere.Name = "sozlukPencere";
             this.sozlukPencere.SelectedTabPage = this.kelimeEkle;
-            this.sozlukPencere.Size = new System.Drawing.Size(1146, 640);
+            this.sozlukPencere.Size = new System.Drawing.Size(1212, 673);
             this.sozlukPencere.TabIndex = 0;
             this.sozlukPencere.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.kelimeEkle,
             this.kelimeIslem,
             this.kelimeEzber,
             this.kelimeTest,
+            this.kelimeOgrenilenler,
             this.kelimeDepo});
             // 
             // kelimeIslem
@@ -841,7 +856,7 @@
             this.kelimeIslem.Controls.Add(this.groupControl2);
             this.kelimeIslem.Image = ((System.Drawing.Image)(resources.GetObject("kelimeIslem.Image")));
             this.kelimeIslem.Name = "kelimeIslem";
-            this.kelimeIslem.Size = new System.Drawing.Size(1144, 593);
+            this.kelimeIslem.Size = new System.Drawing.Size(1210, 581);
             this.kelimeIslem.Text = "Kelime İşlemleri";
             // 
             // gridControl1
@@ -1105,7 +1120,7 @@
             this.kelimeDepo.Image = ((System.Drawing.Image)(resources.GetObject("kelimeDepo.Image")));
             this.kelimeDepo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kelimeDepo.Name = "kelimeDepo";
-            this.kelimeDepo.Size = new System.Drawing.Size(1144, 593);
+            this.kelimeDepo.Size = new System.Drawing.Size(1210, 581);
             this.kelimeDepo.Text = "Kelime Deposu";
             // 
             // gridControl2
@@ -1115,7 +1130,7 @@
             this.gridControl2.Location = new System.Drawing.Point(0, 0);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(1144, 593);
+            this.gridControl2.Size = new System.Drawing.Size(1210, 581);
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -1193,6 +1208,22 @@
             this.colTarih.Visible = true;
             this.colTarih.VisibleIndex = 6;
             // 
+            // kelimeOgrenilenler
+            // 
+            this.kelimeOgrenilenler.Appearance.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kelimeOgrenilenler.Appearance.Header.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kelimeOgrenilenler.Appearance.Header.ForeColor = System.Drawing.Color.White;
+            this.kelimeOgrenilenler.Appearance.Header.Options.UseBackColor = true;
+            this.kelimeOgrenilenler.Appearance.Header.Options.UseFont = true;
+            this.kelimeOgrenilenler.Appearance.Header.Options.UseForeColor = true;
+            this.kelimeOgrenilenler.Controls.Add(this.gridGunlukOgrenilenler);
+            this.kelimeOgrenilenler.Controls.Add(this.gridAylikOgrenilenler);
+            this.kelimeOgrenilenler.Controls.Add(this.gridOgrenilenler);
+            this.kelimeOgrenilenler.Image = ((System.Drawing.Image)(resources.GetObject("kelimeOgrenilenler.Image")));
+            this.kelimeOgrenilenler.Name = "kelimeOgrenilenler";
+            this.kelimeOgrenilenler.Size = new System.Drawing.Size(1210, 581);
+            this.kelimeOgrenilenler.Text = "Öğrenilenler";
+            // 
             // dashboardDesigner1
             // 
             this.dashboardDesigner1.CustomDBSchemaProviderEx = null;
@@ -1215,12 +1246,60 @@
             this.ingilizceTurkceSozlukDataSet1.DataSetName = "İngilizceTurkceSozlukDataSet";
             this.ingilizceTurkceSozlukDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // gridOgrenilenler
+            // 
+            this.gridOgrenilenler.Location = new System.Drawing.Point(34, 20);
+            this.gridOgrenilenler.MainView = this.gridView3;
+            this.gridOgrenilenler.Name = "gridOgrenilenler";
+            this.gridOgrenilenler.Size = new System.Drawing.Size(1148, 153);
+            this.gridOgrenilenler.TabIndex = 0;
+            this.gridOgrenilenler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView3});
+            // 
+            // gridView3
+            // 
+            this.gridView3.GridControl = this.gridOgrenilenler;
+            this.gridView3.Name = "gridView3";
+            this.gridView3.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridAylikOgrenilenler
+            // 
+            this.gridAylikOgrenilenler.Location = new System.Drawing.Point(34, 193);
+            this.gridAylikOgrenilenler.MainView = this.gridView4;
+            this.gridAylikOgrenilenler.Name = "gridAylikOgrenilenler";
+            this.gridAylikOgrenilenler.Size = new System.Drawing.Size(1148, 171);
+            this.gridAylikOgrenilenler.TabIndex = 1;
+            this.gridAylikOgrenilenler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView4});
+            // 
+            // gridView4
+            // 
+            this.gridView4.GridControl = this.gridAylikOgrenilenler;
+            this.gridView4.Name = "gridView4";
+            this.gridView4.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridGunlukOgrenilenler
+            // 
+            this.gridGunlukOgrenilenler.Location = new System.Drawing.Point(34, 388);
+            this.gridGunlukOgrenilenler.MainView = this.gridView5;
+            this.gridGunlukOgrenilenler.Name = "gridGunlukOgrenilenler";
+            this.gridGunlukOgrenilenler.Size = new System.Drawing.Size(1148, 182);
+            this.gridGunlukOgrenilenler.TabIndex = 2;
+            this.gridGunlukOgrenilenler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView5});
+            // 
+            // gridView5
+            // 
+            this.gridView5.GridControl = this.gridGunlukOgrenilenler;
+            this.gridView5.Name = "gridView5";
+            this.gridView5.OptionsView.ShowGroupPanel = false;
+            // 
             // Form1
             // 
             this.AcceptButton = this.smpBtnEkle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1146, 640);
+            this.ClientSize = new System.Drawing.Size(1212, 673);
             this.Controls.Add(this.sozlukPencere);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1272,7 +1351,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableKelimelerBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            this.kelimeOgrenilenler.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ingilizceTurkceSozlukDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridOgrenilenler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridAylikOgrenilenler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridGunlukOgrenilenler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1366,6 +1452,13 @@
         private DevExpress.XtraEditors.TextEdit txtTestCevap;
         private DevExpress.XtraEditors.LabelControl labelControl18;
         private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraTab.XtraTabPage kelimeOgrenilenler;
+        private DevExpress.XtraGrid.GridControl gridOgrenilenler;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private DevExpress.XtraGrid.GridControl gridAylikOgrenilenler;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
+        private DevExpress.XtraGrid.GridControl gridGunlukOgrenilenler;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
     }
 }
 

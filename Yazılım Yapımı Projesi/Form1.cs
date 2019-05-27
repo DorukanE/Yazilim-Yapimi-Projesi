@@ -32,6 +32,9 @@ namespace Yazılım_Yapımı_Projesi
         {
             this.table_KelimelerTableAdapter1.Fill(this.İngilizceTurkceSozlukDataSet4.Table_Kelimeler);
             this.table_KelimelerTableAdapter.Fill(this.İngilizceTurkceSozlukDataSet3.Table_Kelimeler);
+            gridOgrenilenler.DataSource = islem.OgrenilenKelimeler();
+            gridAylikOgrenilenler.DataSource = islem.AylikOgrenilenler();
+            gridGunlukOgrenilenler.DataSource = islem.GunlukOgrenilenler();
 
             KelimeGetir();
             islem.SeviyeArttir(kelime);
@@ -117,7 +120,7 @@ namespace Yazılım_Yapımı_Projesi
             txtEditCumle.Text = "";
         }
 
-        public bool KontrolEt() // Kelime ekleme kısmındaki tüm textbox'ların doldurulması için kontrol ediyoruz.
+        public bool KontrolEt() // Kelime ekleme kısmındaki tüm textbox'ların doldurulması için komrol ediyoruz.
         {
             bool isTrue = true;
 

@@ -129,6 +129,43 @@ namespace Yazılım_Yapımı_Projesi
             guncelle.Parameters.AddWithValue("@tur", kelime.kelimeTuru);           
             guncelle.ExecuteNonQuery();
             baglan.Close();
-        }       
+        }
+        
+        public DataTable OgrenilenKelimeler()
+        {
+            baglan.Open();
+            SqlCommand komut = new SqlCommand("select * from Table_Kelimeler where Seviye>=5", baglan);
+            SqlDataReader dr = komut.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            dr.Close();
+            baglan.Close();
+            return dt;
+        }
+
+        public DataTable AylikOgrenilenler()
+        {
+            baglan.Open();
+            SqlCommand komut = new SqlCommand("select * from Table_Kelimeler where Seviye>=3", baglan);
+            SqlDataReader dr = komut.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            dr.Close();
+            baglan.Close();
+            return dt;
+        }
+
+        public DataTable GunlukOgrenilenler()
+        {
+            baglan.Open();
+            SqlCommand komut = new SqlCommand("select * from Table_Kelimeler where Seviye>=1 and Seviye<=2", baglan);
+            SqlDataReader dr = komut.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            dr.Close();
+            baglan.Close();
+            return dt;
+            
+        }
     }
 }
