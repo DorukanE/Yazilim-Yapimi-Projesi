@@ -146,7 +146,7 @@ namespace Yazılım_Yapımı_Projesi
         public DataTable AylikOgrenilenler()
         {
             baglan.Open();
-            SqlCommand komut = new SqlCommand("select * from Table_Kelimeler where Seviye>=3", baglan);
+            SqlCommand komut = new SqlCommand("select * from Table_Kelimeler where Seviye>=3 and Seviye<=4", baglan);
             SqlDataReader dr = komut.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(dr);

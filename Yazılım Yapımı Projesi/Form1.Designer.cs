@@ -82,7 +82,7 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.tableKelimelerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.İngilizceTurkceSozlukDataSet3 = new Yazılım_Yapımı_Projesi.İngilizceTurkceSozlukDataSet3();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridKelimeler = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colKelimeID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colKelimeTuru = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colİngilizceKelime = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -149,7 +149,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableKelimelerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridKelimeler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtIslemIng.Properties)).BeginInit();
@@ -220,7 +220,7 @@
             // 
             // txtYanlis
             // 
-            this.txtYanlis.Location = new System.Drawing.Point(1025, 387);
+            this.txtYanlis.Location = new System.Drawing.Point(1033, 395);
             this.txtYanlis.Name = "txtYanlis";
             this.txtYanlis.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtYanlis.Properties.Appearance.Options.UseFont = true;
@@ -229,7 +229,7 @@
             // 
             // txtDogru
             // 
-            this.txtDogru.Location = new System.Drawing.Point(1025, 339);
+            this.txtDogru.Location = new System.Drawing.Point(1033, 347);
             this.txtDogru.Name = "txtDogru";
             this.txtDogru.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtDogru.Properties.Appearance.Options.UseFont = true;
@@ -240,7 +240,7 @@
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl22.Appearance.Options.UseFont = true;
-            this.labelControl22.Location = new System.Drawing.Point(891, 390);
+            this.labelControl22.Location = new System.Drawing.Point(899, 398);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(114, 21);
             this.labelControl22.TabIndex = 7;
@@ -250,7 +250,7 @@
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.Location = new System.Drawing.Point(891, 342);
+            this.labelControl21.Location = new System.Drawing.Point(899, 350);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(116, 21);
             this.labelControl21.TabIndex = 6;
@@ -260,7 +260,7 @@
             // 
             this.labelControl20.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("labelControl20.Appearance.Image")));
             this.labelControl20.Appearance.Options.UseImage = true;
-            this.labelControl20.Location = new System.Drawing.Point(995, 283);
+            this.labelControl20.Location = new System.Drawing.Point(1003, 291);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(32, 32);
             this.labelControl20.TabIndex = 5;
@@ -269,7 +269,7 @@
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.Location = new System.Drawing.Point(984, 225);
+            this.labelControl19.Location = new System.Drawing.Point(992, 233);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(96, 34);
             this.labelControl19.TabIndex = 4;
@@ -278,7 +278,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(918, 225);
+            this.pictureBox5.Location = new System.Drawing.Point(926, 233);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 37);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -288,7 +288,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(137, 29);
+            this.pictureBox4.Location = new System.Drawing.Point(145, 37);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(72, 72);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -301,7 +301,7 @@
             this.labelControl11.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.labelControl11.Appearance.Options.UseFont = true;
             this.labelControl11.Appearance.Options.UseForeColor = true;
-            this.labelControl11.Location = new System.Drawing.Point(230, 33);
+            this.labelControl11.Location = new System.Drawing.Point(238, 41);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(535, 68);
             this.labelControl11.TabIndex = 1;
@@ -319,7 +319,7 @@
             this.groupControl3.Controls.Add(this.labelControl14);
             this.groupControl3.Controls.Add(this.labelControl13);
             this.groupControl3.Controls.Add(this.labelControl12);
-            this.groupControl3.Location = new System.Drawing.Point(57, 118);
+            this.groupControl3.Location = new System.Drawing.Point(65, 126);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(777, 443);
             this.groupControl3.TabIndex = 0;
@@ -481,7 +481,7 @@
             this.groupControl1.Controls.Add(this.lblCtrlCumle);
             this.groupControl1.Controls.Add(this.lblCtrlTür);
             this.groupControl1.Controls.Add(this.lblCtrlIngilizce);
-            this.groupControl1.Location = new System.Drawing.Point(193, 106);
+            this.groupControl1.Location = new System.Drawing.Point(226, 115);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(800, 453);
             this.groupControl1.TabIndex = 19;
@@ -596,7 +596,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(288, 27);
+            this.pictureBox2.Location = new System.Drawing.Point(321, 36);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(72, 72);
@@ -612,7 +612,7 @@
             this.lblCtrlBaslik.Appearance.Options.UseBackColor = true;
             this.lblCtrlBaslik.Appearance.Options.UseFont = true;
             this.lblCtrlBaslik.Appearance.Options.UseForeColor = true;
-            this.lblCtrlBaslik.Location = new System.Drawing.Point(377, 31);
+            this.lblCtrlBaslik.Location = new System.Drawing.Point(410, 40);
             this.lblCtrlBaslik.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblCtrlBaslik.Name = "lblCtrlBaslik";
             this.lblCtrlBaslik.Size = new System.Drawing.Size(548, 68);
@@ -625,7 +625,7 @@
             this.lblCumle.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblCumle.Appearance.Options.UseFont = true;
             this.lblCumle.Appearance.Options.UseForeColor = true;
-            this.lblCumle.Location = new System.Drawing.Point(280, 356);
+            this.lblCumle.Location = new System.Drawing.Point(269, 388);
             this.lblCumle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblCumle.Name = "lblCumle";
             this.lblCumle.Size = new System.Drawing.Size(74, 29);
@@ -681,7 +681,7 @@
             this.smpBtnEkle.AppearanceHovered.Options.UseBackColor = true;
             this.smpBtnEkle.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.smpBtnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("smpBtnEkle.ImageOptions.Image")));
-            this.smpBtnEkle.Location = new System.Drawing.Point(551, 448);
+            this.smpBtnEkle.Location = new System.Drawing.Point(540, 480);
             this.smpBtnEkle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.smpBtnEkle.Name = "smpBtnEkle";
             this.smpBtnEkle.Size = new System.Drawing.Size(201, 47);
@@ -691,7 +691,7 @@
             // 
             // cmbBoxEditTur
             // 
-            this.cmbBoxEditTur.Location = new System.Drawing.Point(809, 250);
+            this.cmbBoxEditTur.Location = new System.Drawing.Point(798, 282);
             this.cmbBoxEditTur.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbBoxEditTur.Name = "cmbBoxEditTur";
             this.cmbBoxEditTur.Properties.Appearance.BackColor = System.Drawing.Color.Gray;
@@ -719,7 +719,7 @@
             // 
             this.lblTur.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTur.Appearance.Options.UseFont = true;
-            this.lblTur.Location = new System.Drawing.Point(633, 250);
+            this.lblTur.Location = new System.Drawing.Point(622, 282);
             this.lblTur.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblTur.Name = "lblTur";
             this.lblTur.Size = new System.Drawing.Size(178, 29);
@@ -728,7 +728,7 @@
             // 
             // txtEditCumle
             // 
-            this.txtEditCumle.Location = new System.Drawing.Point(360, 359);
+            this.txtEditCumle.Location = new System.Drawing.Point(349, 391);
             this.txtEditCumle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEditCumle.Name = "txtEditCumle";
             this.txtEditCumle.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -743,7 +743,7 @@
             // 
             // txtEditTurkce
             // 
-            this.txtEditTurkce.Location = new System.Drawing.Point(360, 300);
+            this.txtEditTurkce.Location = new System.Drawing.Point(349, 332);
             this.txtEditTurkce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEditTurkce.Name = "txtEditTurkce";
             this.txtEditTurkce.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -760,7 +760,7 @@
             // 
             this.lblTurkce.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTurkce.Appearance.Options.UseFont = true;
-            this.lblTurkce.Location = new System.Drawing.Point(180, 304);
+            this.lblTurkce.Location = new System.Drawing.Point(169, 336);
             this.lblTurkce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblTurkce.Name = "lblTurkce";
             this.lblTurkce.Size = new System.Drawing.Size(181, 29);
@@ -770,7 +770,7 @@
             // txtEditIngilizce
             // 
             this.txtEditIngilizce.EditValue = "";
-            this.txtEditIngilizce.Location = new System.Drawing.Point(360, 250);
+            this.txtEditIngilizce.Location = new System.Drawing.Point(349, 282);
             this.txtEditIngilizce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEditIngilizce.Name = "txtEditIngilizce";
             this.txtEditIngilizce.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -787,7 +787,7 @@
             // 
             this.lblIngilizce.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblIngilizce.Appearance.Options.UseFont = true;
-            this.lblIngilizce.Location = new System.Drawing.Point(180, 252);
+            this.lblIngilizce.Location = new System.Drawing.Point(169, 284);
             this.lblIngilizce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblIngilizce.Name = "lblIngilizce";
             this.lblIngilizce.Size = new System.Drawing.Size(182, 29);
@@ -797,7 +797,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(560, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(549, 75);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(182, 127);
@@ -863,13 +863,13 @@
             // gridControl1
             // 
             this.gridControl1.DataSource = this.tableKelimelerBindingSource;
-            this.gridControl1.Location = new System.Drawing.Point(11, 3);
-            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Location = new System.Drawing.Point(64, 19);
+            this.gridControl1.MainView = this.gridKelimeler;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(567, 565);
             this.gridControl1.TabIndex = 14;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gridKelimeler});
             // 
             // tableKelimelerBindingSource
             // 
@@ -881,18 +881,18 @@
             this.İngilizceTurkceSozlukDataSet3.DataSetName = "İngilizceTurkceSozlukDataSet3";
             this.İngilizceTurkceSozlukDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // gridView1
+            // gridKelimeler
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridKelimeler.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colKelimeID,
             this.colKelimeTuru,
             this.colİngilizceKelime,
             this.colTurkceKarsılıgı,
             this.colOrnekCumle});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
-            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
+            this.gridKelimeler.GridControl = this.gridControl1;
+            this.gridKelimeler.Name = "gridKelimeler";
+            this.gridKelimeler.OptionsView.ShowGroupPanel = false;
+            this.gridKelimeler.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridKelimeler_FocusedRowChanged);
             // 
             // colKelimeID
             // 
@@ -939,7 +939,7 @@
             this.btnIslemGuncelle.AppearanceHovered.Options.UseBackColor = true;
             this.btnIslemGuncelle.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btnIslemGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnIslemGuncelle.ImageOptions.Image")));
-            this.btnIslemGuncelle.Location = new System.Drawing.Point(681, 435);
+            this.btnIslemGuncelle.Location = new System.Drawing.Point(734, 451);
             this.btnIslemGuncelle.Name = "btnIslemGuncelle";
             this.btnIslemGuncelle.Size = new System.Drawing.Size(166, 70);
             this.btnIslemGuncelle.TabIndex = 13;
@@ -956,7 +956,7 @@
             this.btnIslemSil.AppearanceHovered.Options.UseBackColor = true;
             this.btnIslemSil.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btnIslemSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnIslemSil.ImageOptions.Image")));
-            this.btnIslemSil.Location = new System.Drawing.Point(892, 435);
+            this.btnIslemSil.Location = new System.Drawing.Point(945, 451);
             this.btnIslemSil.Name = "btnIslemSil";
             this.btnIslemSil.Size = new System.Drawing.Size(164, 70);
             this.btnIslemSil.TabIndex = 12;
@@ -975,7 +975,7 @@
             this.groupControl2.Controls.Add(this.labelControl4);
             this.groupControl2.Controls.Add(this.labelControl3);
             this.groupControl2.Controls.Add(this.labelControl1);
-            this.groupControl2.Location = new System.Drawing.Point(600, 27);
+            this.groupControl2.Location = new System.Drawing.Point(653, 43);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(517, 364);
             this.groupControl2.TabIndex = 11;
@@ -1359,7 +1359,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableKelimelerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.İngilizceTurkceSozlukDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridKelimeler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
@@ -1426,7 +1426,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.SimpleButton btnIslemGuncelle;
         private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridKelimeler;
         private İngilizceTurkceSozlukDataSet3 İngilizceTurkceSozlukDataSet3;
         private System.Windows.Forms.BindingSource tableKelimelerBindingSource;
         private İngilizceTurkceSozlukDataSet3TableAdapters.Table_KelimelerTableAdapter table_KelimelerTableAdapter;

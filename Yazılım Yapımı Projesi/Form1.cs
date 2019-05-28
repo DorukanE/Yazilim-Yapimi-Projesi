@@ -118,7 +118,7 @@ namespace Yazılım_Yapımı_Projesi
             txtEditCumle.Text = "";
         }
 
-        public bool KontrolEt() // Kelime ekleme kısmındaki tüm textbox'ların doldurulması için komrol ediyoruz.
+        public bool KontrolEt() // Kelime ekleme kısmındaki tüm textbox'ların doldurulması için kontrol ediyoruz.
         {
             bool isTrue = true;
 
@@ -133,9 +133,9 @@ namespace Yazılım_Yapımı_Projesi
         
         // ************************ Kelime Güncelleme ve Silme Bölümü **************************
 
-        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e) //GridKontrol'deki verileri textbox'lara çekiyoruz.
+        private void gridKelimeler_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e) //GridKontrol'deki verileri textbox'lara çekiyoruz.
         {
-            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            DataRow dr = gridKelimeler.GetDataRow(gridKelimeler.FocusedRowHandle);
             txtIslemId.Text = dr[0].ToString();
             txtIslemTur.Text = dr[1].ToString();
             txtIslemIng.Text = dr[2].ToString();
@@ -234,6 +234,14 @@ namespace Yazılım_Yapımı_Projesi
         }
         //**************************************************************************************
 
+        //**************** Istatistik Gösterme **********************
+        private void btnIstatistik_Click(object sender, EventArgs e)
+        {
+            FormIstatistik frmIstatistik = new FormIstatistik();
+            frmIstatistik.Show();
+        }
+        //*****************************************************
+
         // Textbox'lara rakam girişini engelliyoruz.
 
         private void txtEditIngilizce_KeyPress(object sender, KeyPressEventArgs e)
@@ -247,13 +255,7 @@ namespace Yazılım_Yapımı_Projesi
             e.Handled = !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)
                      && !char.IsSeparator(e.KeyChar);
         }
-
-        private void btnIstatistik_Click(object sender, EventArgs e)
-        {
-            FormIstatistik frmIstatistik = new FormIstatistik();            
-            frmIstatistik.Show();
-        }
-
+       
         private void txtEditCumle_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)
