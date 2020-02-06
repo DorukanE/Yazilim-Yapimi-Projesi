@@ -641,3 +641,38 @@ C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projes
 C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım Yapımı Projesi.csproj.CopyComplete
 C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım Yapımı Projesi.exe
 C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\obj\Debug\Yazılım Yapımı Projesi.pdb
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Charts.v17.1.Core.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Dashboard.v17.1.Core.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Dashboard.v17.1.Win.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Data.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.DataAccess.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.DataAccess.v17.1.UI.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Map.v17.1.Core.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Office.v17.1.Core.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.PivotGrid.v17.1.Core.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.RichEdit.v17.1.Core.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.TreeMap.v17.1.Core.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Utils.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Utils.v17.1.UI.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.Xpo.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraBars.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraCharts.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraCharts.v17.1.UI.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraGauges.v17.1.Core.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraGauges.v17.1.Presets.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraGauges.v17.1.Win.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraGrid.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraLayout.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraMap.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraPivotGrid.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraReports.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraRichEdit.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraRichEdit.v17.1.Extensions.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraTreeList.v17.1.dll
+C:\Users\doruk\Documents\GitHub\Yazilim-Yapimi-Projesi\Yazılım Yapımı Projesi\bin\Debug\DevExpress.XtraTreeMap.v17.1.dll

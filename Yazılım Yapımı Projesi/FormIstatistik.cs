@@ -18,7 +18,7 @@ namespace Yazılım_Yapımı_Projesi
             InitializeComponent();
         }
 
-        SqlConnection baglan = new SqlConnection(@"Data Source=LAPTOP-6UFOC7K3\MSSQLSERVER01;Initial Catalog=İngilizceTurkceSozluk;Integrated Security=True");
+        SqlConnection baglan = new SqlConnection(@"Data Source=.;Initial Catalog=İngilizceTurkceSozluk;Integrated Security=True");
 
         private void FormIstatistik_Load(object sender, EventArgs e)
         {
@@ -30,6 +30,11 @@ namespace Yazılım_Yapımı_Projesi
                 chartIstatistik.Series["Seviye-Ogrenilenler"].Points.AddPoint(Convert.ToString(dr[0]), int.Parse(dr[1].ToString()));
             }
             baglan.Close();
+        }
+
+        private void chartIstatistik_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

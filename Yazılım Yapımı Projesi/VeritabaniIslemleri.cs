@@ -10,7 +10,7 @@ namespace Yazılım_Yapımı_Projesi
 {
     public class VeritabaniIslemleri
     {        
-        SqlConnection baglan = new SqlConnection(@"Data Source=LAPTOP-6UFOC7K3\MSSQLSERVER01;Initial Catalog=İngilizceTurkceSozluk;Integrated Security=True");
+        SqlConnection baglan = new SqlConnection(@"Data Source=.;Initial Catalog=İngilizceTurkceSozluk;Integrated Security=True");
 
         public void KelimeEkle(Kelime kelime)
         {

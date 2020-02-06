@@ -23,7 +23,7 @@ namespace Yazılım_Yapımı_Projesi
         VeritabaniIslemleri islem = new VeritabaniIslemleri();
         List<Kelime> kelimeler = new List<Kelime>();
         Kelime kelime = new Kelime();
-        SqlConnection baglan = new SqlConnection(@"Data Source=LAPTOP-6UFOC7K3\MSSQLSERVER01;Initial Catalog=İngilizceTurkceSozluk;Integrated Security=True");
+        SqlConnection baglan = new SqlConnection(@"Data Source=.;Initial Catalog=İngilizceTurkceSozluk;Integrated Security=True");
         int dogruSayac = 0, yanlisSayac = 0;
 
         //  ***************** Kelime Ezberleme Bölümü ************************

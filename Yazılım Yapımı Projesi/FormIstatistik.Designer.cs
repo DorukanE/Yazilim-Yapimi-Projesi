@@ -56,22 +56,25 @@
             this.chartIstatistik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartIstatistik.Legend.Name = "Default Legend";
             this.chartIstatistik.Location = new System.Drawing.Point(0, 0);
+            this.chartIstatistik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartIstatistik.Name = "chartIstatistik";
             this.chartIstatistik.PaletteName = "Green";
             series1.Name = "Seviye-Ogrenilenler";
             series1.View = sideBySideBar3DSeriesView1;
             this.chartIstatistik.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.chartIstatistik.Size = new System.Drawing.Size(721, 459);
+            this.chartIstatistik.Size = new System.Drawing.Size(618, 373);
             this.chartIstatistik.TabIndex = 0;
+            this.chartIstatistik.Click += new System.EventHandler(this.chartIstatistik_Click);
             // 
             // FormIstatistik
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(721, 459);
+            this.ClientSize = new System.Drawing.Size(618, 373);
             this.Controls.Add(this.chartIstatistik);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormIstatistik";
             this.Text = "FormIstatistik";
             this.Load += new System.EventHandler(this.FormIstatistik_Load);
